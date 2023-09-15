@@ -49,16 +49,16 @@
 36. DevOps (Practices and tools)
 37. Continuous Integration (CI)
 38. Continuous Deployment (CD)
-39. Jenkins (CI/CD tool)
-40. Travis CI (CI/CD tool)
-41. CircleCI (CI/CD tool)
+39. Jenkins (CI/CD tool) [Jenkins Cheat Sheet](https://www.jenkins.io/doc/book/cheat-sheet/)
+40. Travis CI (CI/CD tool) [Travis CI Cheat Sheet](https://docs.travis-ci.com/user/common-build-problems/#travis-ci-cant-find-my-cmd)
+41. CircleCI (CI/CD tool) [CircleCI Cheat Sheet](https://circleci.com/docs/2.0/reusing-config/)
 
 ## Version Control and Tools:
 
-42. Git (Commands and workflow)
+42. Git (Commands and workflow) [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 43. Linux (Basic commands)
-44. Docker
-45. Kubernetes (Container orchestration)
+44. Docker [Docker Cheat Sheet](https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf)
+45. Kubernetes (Container orchestration) [Kubernetes Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 46. Docker Compose (Service definition)
 
 ## Cloud Computing:
@@ -72,8 +72,8 @@
 50. Unit Testing
 51. Integration Testing
 52. End-to-End Testing (E2E)
-53. Jest (JavaScript testing framework)
-54. Selenium (Automation testing tool)
+53. Jest (JavaScript testing framework) [Jest Cheat Sheet](https://devhints.io/jest)
+54. Selenium (Automation testing tool) [Selenium Cheat Sheet](https://www.browserstack.com/guide/selenium-cheat-sheet)
 55. JUnit (Java testing framework)
 56. PyTest (Python testing framework)
 
