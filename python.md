@@ -7,8 +7,7 @@ Python is a high-level, interpreted programming language known for its simplicit
 ## This is a simple Python program
 
     print("Hello, Python!")
-    
-    Python Syntax
+
 
 ## Variables and data types
 
