@@ -2,7 +2,7 @@
 
 ## Programming Languages:
 
-1. Python
+1. Python 🐍
 2. JavaScript (and its frameworks like React, Angular, Vue.js)
 3. Java
 4. C++
@@ -24,6 +24,7 @@
 20. Scala
 21. Dart (for Flutter)
 22. Julia
+Rust
 23. TypeScript
 
 ## Databases and Data Storage:
