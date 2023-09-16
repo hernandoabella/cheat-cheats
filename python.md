@@ -1177,7 +1177,7 @@ print(result1)  # Output: 15
 print(result2)  # Output: 27
 ```
 
-### Metaclasses
+## Metaclasses
 
 -   In Python, everything is an object, including classes. A metaclass is a class for classes. It defines the behavior and structure of classes.
 -   When you create a class, it is an instance of a metaclass. By default, in Python, the metaclass for all classes is the built-in `type` metaclass.
