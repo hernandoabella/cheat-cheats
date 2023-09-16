@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Mooli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mooli", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+}
+
+.sidebar {
+  height: 100vh;
+  float: left;
+  background: #f3f3f3;
+  width: 200px;
+}
+
+.sidebar ul li a {
+  padding: 10px;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  background: #d0d0d0;
+}
+
+.side-bar-active {
+  background: #333 !important;
+  color: #fff;
+}
+
+.main-container {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.main-container ul li {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex div {
+  margin: 10px;
+}
+
+pre {
+  margin-top: 10px;
+}
