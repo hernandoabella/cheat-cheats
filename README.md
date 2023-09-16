@@ -3,7 +3,7 @@
 ## Programming Languages:
 
 1. Python 🐍
-2. JavaScript (and its frameworks like React, Angular, Vue.js)
+2. JavaScript
 3. Java
 4. C++
 5. C
