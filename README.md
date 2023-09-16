@@ -2,7 +2,7 @@
 
 ## Programming Languages:
 
-1. Python 🐍
+1. [Python 🐍](/python.md)
 2. JavaScript
 3. Java
 4. C++
