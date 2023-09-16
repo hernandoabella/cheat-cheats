@@ -1,6 +1,6 @@
 # Python Cheatsheet 🐍
 
-## Introduction
+## Basics
 
 ### What is Python?
 
