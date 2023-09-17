@@ -42,12 +42,14 @@
             <a href="/"><div class="back"><i class="fa-duotone fa-arrow-left"></i></div></a>
             <div class="burger-menu"><i class="fa-duotone fa-bars"></i></div>
         </div>
-        <div class="container">
-            <div class="logo">Programming Cheatsheets</div>
-          </div>
-        <div class="right-header-icons">
-            <a href="https://github.com/hernandoabella/programming-cheatsheets/blob/main/python.md" target="_blank"><div><i class="fa-brands fa-github-alt"></i></div></a>
-            <div onclick="toggleDarkMode()"><i class="fa-sharp fa-light fa-sunglasses"></i></div>
+        <div class="header-flex">
+            <div class="container">
+                <div class="logo">Programming Cheatsheets</div>
+              </div>
+            <div class="right-header-icons">
+                <a href="https://github.com/hernandoabella/programming-cheatsheets/blob/main/python.md" target="_blank"><div><i class="fa-brands fa-github-alt"></i></div></a>
+                <div onclick="toggleDarkMode()"><i class="fa-sharp fa-light fa-sunglasses"></i></div>
+            </div>
         </div>
     </header>
 
@@ -86,8 +88,7 @@
             <h3 id="what-is-python-">Simple Program</h>
                 
             <pre><code><span class="hljs-comment"># This is a simple Python program</span>
-      <span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello, Python!"</span>)
-      </code></pre>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello, Python!"</span>)</code></pre>
           </div>
           <div>
             <h3 id="python-syntax">Python Syntax</h3>
@@ -147,33 +148,42 @@ Use it for longer explanations or docstrings.
           </div>
 
       <div>
-        <h2 id="control-flow">Control Flow</h2>
+        
+      <div>
+        <div class="subtitle">
+            <h2 id="control-flow">Control Flow</h2>
+            <div class="gradient-line"></div>
+        </div>
+        
       <p>
         Control flow in Python refers to the order in which statements are
         executed in a program. It allows you to make decisions, repeat actions,
         and handle exceptions based on conditions.
       </p>
-      <div>
-        <h3 id="conditional-statements-if-elif-else-">
-            Conditional Statements (if, elif, else)
-          </h3>
-          <p>
-            Conditional statements are used to execute different code blocks based
-            on certain conditions. Python supports <code>if</code>,
-            <code>elif</code> (short for &quot;else if&quot;), and
-            <code>else</code> statements for decision-making.
-          </p>
-          <pre><code><span class="hljs-comment"># Conditional statement example</span>
-    age = 18
-    
-    <span class="hljs-keyword">if</span> age &lt; 18:
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are under 18 years old."</span>)
-    <span class="hljs-keyword">elif</span> age == 18:
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">"You just turned 18!"</span>)
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are over 18 years old."</span>)
-    </code></pre>
-          <h3 id="loops-for-while-">Loops (for, while)</h3>
+      <div class="flex">
+        <div>
+            <h3 id="conditional-statements-if-elif-else-">
+                Conditional Statements (if, elif, else)
+              </h3>
+              <p>
+                Conditional statements are used to execute different code blocks based
+                on certain conditions. Python supports <code>if</code>,
+                <code>elif</code> (short for &quot;else if&quot;), and
+                <code>else</code> statements for decision-making.
+              </p>
+              <pre><code><span class="hljs-comment"># Conditional statement example</span>
+        age = 18
+        
+        <span class="hljs-keyword">if</span> age &lt; 18:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are under 18 years old."</span>)
+        <span class="hljs-keyword">elif</span> age == 18:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"You just turned 18!"</span>)
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are over 18 years old."</span>)
+        </code></pre>
+        </div>
+          <div>
+            <h3 id="loops-for-while-">Loops (for, while)</h3>
           <p>
             Loops allow you to repeat a block of code multiple times. Python has
             <code>for</code> and <code>while</code> loops for iteration.
@@ -191,7 +201,7 @@ Use it for longer explanations or docstrings.
     <span class="hljs-comment"># I like cherries</span>
     </code></pre>
           <p><strong>while loop:</strong></p>
-          <pre><code>`# While loop example
+          <pre><code># While loop example
     count = <span class="hljs-number">0</span>
     
     <span class="hljs-keyword">while</span> count &lt; <span class="hljs-number">5</span>:
@@ -205,7 +215,9 @@ Use it for longer explanations or docstrings.
     <span class="hljs-meta"># Count is 3</span>
     <span class="hljs-meta"># Count is 4`</span>
     </code></pre>
-          <h3 id="break-and-continue-statements">Break and Continue Statements</h3>
+          </div>
+          <div>
+            <h3 id="break-and-continue-statements">Break and Continue Statements</h3>
           <ul>
             <li>
               <code>break</code>: Terminates the loop prematurely when a certain
@@ -242,31 +254,35 @@ Use it for longer explanations or docstrings.
     # <span class="hljs-number">3</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">an</span> odd <span class="hljs-keyword">number</span>
     # <span class="hljs-number">5</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">an</span> odd <span class="hljs-keyword">number</span>
     </code></pre>
-          <h3 id="exception-handling-try-except-">
-            Exception Handling (try, except)
-          </h3>
-          <p>
-            Exception handling allows you to gracefully handle errors or exceptions
-            that may occur during program execution. You can use
-            <code>try</code> and <code>except</code> blocks to catch and handle
-            exceptions.
-          </p>
-          <pre><code><span class="hljs-comment"># Exception handling example</span>
-    <span class="hljs-keyword">try</span>:
-        result = <span class="hljs-number">10</span> / <span class="hljs-number">0</span>  <span class="hljs-comment"># Division by zero raises an exception</span>
-    <span class="hljs-keyword">except</span> ZeroDivisionError <span class="hljs-keyword">as</span> e:
-        print(f<span class="hljs-string">"Error: {e}"</span>)
-    <span class="hljs-keyword">else</span>:
-        print(f<span class="hljs-string">"Result: {result}"</span>)
-    <span class="hljs-keyword">finally</span>:
-        print(<span class="hljs-string">"Execution completed"</span>)
-    
-    <span class="hljs-comment"># Output:</span>
-    <span class="hljs-comment"># Error: division by zero</span>
-    <span class="hljs-comment"># Execution completed</span>
-    </code></pre>
+          </div>
+          <div>
+            <h3 id="exception-handling-try-except-">
+                Exception Handling (try, except)
+              </h3>
+              <p>
+                Exception handling allows you to gracefully handle errors or exceptions
+                that may occur during program execution. You can use
+                <code>try</code> and <code>except</code> blocks to catch and handle
+                exceptions.
+              </p>
+              <pre><code><span class="hljs-comment"># Exception handling example</span>
+        <span class="hljs-keyword">try</span>:
+            result = <span class="hljs-number">10</span> / <span class="hljs-number">0</span>  <span class="hljs-comment"># Division by zero raises an exception</span>
+        <span class="hljs-keyword">except</span> ZeroDivisionError <span class="hljs-keyword">as</span> e:
+            print(f<span class="hljs-string">"Error: {e}"</span>)
+        <span class="hljs-keyword">else</span>:
+            print(f<span class="hljs-string">"Result: {result}"</span>)
+        <span class="hljs-keyword">finally</span>:
+            print(<span class="hljs-string">"Execution completed"</span>)
+        
+        <span class="hljs-comment"># Output:</span>
+        <span class="hljs-comment"># Error: division by zero</span>
+        <span class="hljs-comment"># Execution completed</span>
+        </code></pre>
+          </div>
       </div>
       </div>
+      </div>  
       <h2 id="data-structures">Data Structures</h2>
       <p>
         Data structures are used to store and organize data efficiently. Python
