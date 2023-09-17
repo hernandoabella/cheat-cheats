@@ -283,96 +283,117 @@ Use it for longer explanations or docstrings.
       </div>
       </div>
       </div>  
-      <h2 id="data-structures">Data Structures</h2>
+      
+      <div>
+        <div class="subtitle">
+          <h2 id="data-structures">Data Structures</h2>
+        </div>
       <p>
         Data structures are used to store and organize data efficiently. Python
         provides several built-in data structures, including lists, tuples,
         sets, and dictionaries, each with its own characteristics and use cases.
       </p>
-      <h3 id="lists">Lists</h3>
-      <p>
-        A list is a mutable (changeable) data structure that can hold an ordered
-        collection of items. Lists are defined by square brackets
-        (<code>[]</code>) and can contain elements of different data types.
-      </p>
-      <pre><code><span class="hljs-comment"># List example</span>
-fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>]
-<span class="hljs-built_in">print</span>(fruits[0])  <span class="hljs-comment"># Accessing the first element</span>
-
-fruits.append(<span class="hljs-string">"orange"</span>)  <span class="hljs-comment"># Adding an element</span>
-fruits.remove(<span class="hljs-string">"banana"</span>)  <span class="hljs-comment"># Removing an element</span>
-
-<span class="hljs-keyword">for</span> fruit <span class="hljs-keyword">in</span> fruits:
-    <span class="hljs-built_in">print</span>(f<span class="hljs-string">"I like {fruit}s"</span>)
-
-<span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># apple</span>
-<span class="hljs-comment"># I like apples</span>
-<span class="hljs-comment"># I like cherry</span>
-<span class="hljs-comment"># I like orange</span>
-</code></pre>
-      <h3 id="tuples">Tuples</h3>
-      <p>
-        A tuple is an immutable (unchangeable) data structure defined by
-        parentheses (<code>()</code>). Tuples are similar to lists but cannot be
-        modified once created.
-      </p>
-      <pre><code><span class="hljs-comment"># Tuple example</span>
-<span class="hljs-attr">coordinates</span> = (<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
-x, <span class="hljs-attr">y</span> = coordinates  <span class="hljs-comment"># Unpacking a tuple</span>
-
-print(f<span class="hljs-string">"X-coordinate: {x}, Y-coordinate: {y}"</span>)
-
-<span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># X-coordinate: 3, Y-coordinate: 4</span>
-</code></pre>
-      <h3 id="sets">Sets</h3>
-      <p>
-        A set is an unordered collection of unique elements defined by curly
-        braces (<code>{}</code>). Sets are used for tasks like removing
-        duplicates from a list and performing set operations like union and
-        intersection.
-      </p>
-      <pre><code><span class="hljs-comment"># Set example</span>
-fruits = {<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>, <span class="hljs-string">"apple"</span>}  <span class="hljs-comment"># Duplicate "apple" is automatically removed</span>
-
+      <div class="flex">
+        <div>
+          <h3 id="lists">Lists</h3>
+        <p>
+          A list is a mutable (changeable) data structure that can hold an ordered
+          collection of items. Lists are defined by square brackets
+          (<code>[]</code>) and can contain elements of different data types.
+        </p>
+        <pre><code><span class="hljs-comment"># List example</span>
+  fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>]
+  <span class="hljs-built_in">print</span>(fruits[0])  <span class="hljs-comment"># Accessing the first element</span>
+  
+  fruits.append(<span class="hljs-string">"orange"</span>)  <span class="hljs-comment"># Adding an element</span>
+  fruits.remove(<span class="hljs-string">"banana"</span>)  <span class="hljs-comment"># Removing an element</span>
+  
+  <span class="hljs-keyword">for</span> fruit <span class="hljs-keyword">in</span> fruits:
+      <span class="hljs-built_in">print</span>(f<span class="hljs-string">"I like {fruit}s"</span>)
+  
+  <span class="hljs-comment"># Output:</span>
+  <span class="hljs-comment"># apple</span>
+  <span class="hljs-comment"># I like apples</span>
+  <span class="hljs-comment"># I like cherry</span>
+  <span class="hljs-comment"># I like orange</span>
+  </code></pre>
+        </div>
+        <div>
+          <h3 id="tuples">Tuples</h3>
+        <p>
+          A tuple is an immutable (unchangeable) data structure defined by
+          parentheses (<code>()</code>). Tuples are similar to lists but cannot be
+          modified once created.
+        </p>
+        <pre><code><span class="hljs-comment"># Tuple example</span>
+  <span class="hljs-attr">coordinates</span> = (<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+  x, <span class="hljs-attr">y</span> = coordinates  <span class="hljs-comment"># Unpacking a tuple</span>
+  
+  print(f<span class="hljs-string">"X-coordinate: {x}, Y-coordinate: {y}"</span>)
+  
+  <span class="hljs-comment"># Output:</span>
+  <span class="hljs-comment"># X-coordinate: 3, Y-coordinate: 4</span>
+  </code></pre>
+        </div>
+        <div>
+          <h3 id="sets">Sets</h3>
+        <p>
+          A set is an unordered collection of unique elements defined by curly
+          braces (<code>{}</code>). Sets are used for tasks like removing
+          duplicates from a list and performing set operations like union and
+          intersection.
+        </p>
+        <pre><code><span class="hljs-comment"># Set example</span>
+fruits = {<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>, <span class="hljs-string">"apple"</span>}  
+<span class="hljs-comment"># Duplicate "apple" is automatically removed</span>
+  
 fruits.add(<span class="hljs-string">"orange"</span>)  <span class="hljs-comment"># Adding an element</span>
 fruits.remove(<span class="hljs-string">"banana"</span>)  <span class="hljs-comment"># Removing an element</span>
-
+  
 <span class="hljs-keyword">for</span> fruit <span class="hljs-keyword">in</span> fruits:
     <span class="hljs-built_in">print</span>(f<span class="hljs-string">"I like {fruit}s"</span>)
-
+  
 <span class="hljs-comment"># Output:</span>
 <span class="hljs-comment"># I like oranges</span>
 <span class="hljs-comment"># I like apples</span>
-<span class="hljs-comment"># I like cherries</span>
-</code></pre>
-      <h3 id="dictionaries">Dictionaries</h3>
-      <p>
-        A dictionary is a collection of key-value pairs enclosed in curly braces
-        (<code>{}</code>). Each key is unique and associated with a value.
-        Dictionaries are used for mapping and storing data in an efficient way.
-      </p>
-      <pre><code><span class="hljs-meta"># Dictionary example</span>
-person = {
-    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Alice"</span>,
-    <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>,
-    <span class="hljs-string">"city"</span>: <span class="hljs-string">"New York"</span>
-}
+<span class="hljs-comment"># I like cherries</span></code></pre>
+        </div>
+        <div>
+          <h3 id="dictionaries">Dictionaries</h3>
+        <p>
+          A dictionary is a collection of key-value pairs enclosed in curly braces
+          (<code>{}</code>). Each key is unique and associated with a value.
+          Dictionaries are used for mapping and storing data in an efficient way.
+        </p>
+        <pre><code><span class="hljs-meta"># Dictionary example</span>
+  person = {
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"Alice"</span>,
+      <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>,
+      <span class="hljs-string">"city"</span>: <span class="hljs-string">"New York"</span>
+  }
+  
+  print(f<span class="hljs-string">"Name: {person['name']}, Age: {person['age']}, City: {person['city']}"</span>)
+  
+  <span class="hljs-meta"># Output:</span>
+  <span class="hljs-meta"># Name: Alice, Age: 25, City: New York</span>
+  </code></pre>
+        </div>
+      </div>
+      </div>
 
-print(f<span class="hljs-string">"Name: {person['name']}, Age: {person['age']}, City: {person['city']}"</span>)
-
-<span class="hljs-meta"># Output:</span>
-<span class="hljs-meta"># Name: Alice, Age: 25, City: New York</span>
-</code></pre>
-      <h2 id="functions">Functions</h2>
+      <div>
+        <div class="subtitle">
+          <h2 id="functions">Functions</h2>
+        </div>
       <p>
         A function is a block of reusable code that performs a specific task.
         Functions help in modularizing code, making it more organized and easier
         to maintain. In Python, you can define functions using the
         <code>def</code> keyword.
       </p>
-      <h3 id="defining-functions">Defining Functions</h3>
+      <div class="flex">
+        <div>
+          <h3 id="defining-functions">Defining Functions</h3>
       <p>
         To define a function, you specify its name, parameters (if any), and a
         block of code to be executed when the function is called. Functions can
@@ -389,31 +410,35 @@ print(message)
 <span class="hljs-comment"># Output:</span>
 <span class="hljs-comment"># Hello, Alice!`</span>
 </code></pre>
-      <h3 id="function-parameters-and-arguments">
-        Function Parameters and Arguments
-      </h3>
-      <p>
-        Parameters are placeholders for data that a function can receive.
-        Arguments are the actual values passed to a function when it&#39;s
-        called. Python supports positional arguments, keyword arguments, and
-        default values for parameters.
-      </p>
-      <pre><code><span class="hljs-comment"># Function with parameters and default value</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(name, greeting=<span class="hljs-string">"Hello"</span>)</span>:</span>
-    <span class="hljs-keyword">return</span> f<span class="hljs-string">"{greeting}, {name}!"</span>
-
-<span class="hljs-comment"># Function calls</span>
-message1 = greet(<span class="hljs-string">"Alice"</span>)
-message2 = greet(<span class="hljs-string">"Bob"</span>, <span class="hljs-string">"Hi"</span>)
-
-print(message1)
-print(message2)
-
-<span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># Hello, Alice!</span>
-<span class="hljs-comment"># Hi, Bob!</span>
-</code></pre>
-      <h3 id="lambda-functions">Lambda Functions</h3>
+        </div>
+      <div>
+        <h3 id="function-parameters-and-arguments">
+          Function Parameters and Arguments
+        </h3>
+        <p>
+          Parameters are placeholders for data that a function can receive.
+          Arguments are the actual values passed to a function when it&#39;s
+          called. Python supports positional arguments, keyword arguments, and
+          default values for parameters.
+        </p>
+        <pre><code><span class="hljs-comment"># Function with parameters and default value</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(name, greeting=<span class="hljs-string">"Hello"</span>)</span>:</span>
+      <span class="hljs-keyword">return</span> f<span class="hljs-string">"{greeting}, {name}!"</span>
+  
+  <span class="hljs-comment"># Function calls</span>
+  message1 = greet(<span class="hljs-string">"Alice"</span>)
+  message2 = greet(<span class="hljs-string">"Bob"</span>, <span class="hljs-string">"Hi"</span>)
+  
+  print(message1)
+  print(message2)
+  
+  <span class="hljs-comment"># Output:</span>
+  <span class="hljs-comment"># Hello, Alice!</span>
+  <span class="hljs-comment"># Hi, Bob!</span>
+  </code></pre>
+      </div>
+      <div>
+        <h3 id="lambda-functions">Lambda Functions</h3>
       <p>
         Lambda functions, also known as anonymous functions, are small, one-line
         functions defined using the <code>lambda</code> keyword. They are often
@@ -425,7 +450,9 @@ print(message2)
 </span>
 print(result)  <span class="hljs-comment"># Output: 8</span>
 </code></pre>
-      <h3 id="recursion">Recursion</h3>
+      </div>
+      <div>
+        <h3 id="recursion">Recursion</h3>
       <p>
         Recursion is a programming technique where a function calls itself to
         solve a problem. In Python, a recursive function consists of a base case
@@ -442,137 +469,152 @@ print(result)  <span class="hljs-comment"># Output: 8</span>
 result = factorial(<span class="hljs-number">5</span>)
 print(result)  <span class="hljs-comment"># Output: 120`</span>
 </code></pre>
-      <h2 id="object-oriented-programming-oop-">
-        Object-Oriented Programming (OOP)
-      </h2>
-      <p>
-        OOP is a programming paradigm that organizes code into objects, which
-        are instances of classes. It focuses on modeling real-world entities and
-        their interactions.
-      </p>
-      <h3 id="classes-and-objects">Classes and Objects</h3>
-      <p>
-        A class is a blueprint for creating objects. An object is an instance of
-        a class. Classes define attributes (data) and methods (functions) that
-        objects of that class can have.
-      </p>
-      <pre><code><span class="hljs-comment"># Class definition</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, name, age)</span></span>:
-        <span class="hljs-keyword">self</span>.name = name
-        <span class="hljs-keyword">self</span>.age = age
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
-        <span class="hljs-keyword">return</span> f<span class="hljs-string">"Hello, my name is {self.name} and I am {self.age} years old."</span>
-
-<span class="hljs-comment"># Object creation</span>
-person1 = Person(<span class="hljs-string">"Alice"</span>, <span class="hljs-number">25</span>)
-person2 = Person(<span class="hljs-string">"Bob"</span>, <span class="hljs-number">30</span>)
-
-<span class="hljs-comment"># Using object methods</span>
-message1 = person1.greet()
-message2 = person2.greet()
-
-print(message1)
-print(message2)
-
-<span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># Hello, my name is Alice and I am 25 years old.</span>
-<span class="hljs-comment"># Hello, my name is Bob and I am 30 years old.</span>
-</code></pre>
-      <h3 id="inheritance">Inheritance</h3>
-      <p>
-        Inheritance is a mechanism where a new class (subclass or derived class)
-        can inherit properties and behaviors (attributes and methods) from an
-        existing class (base class or superclass). It promotes code reuse and
-        the creation of hierarchical relationships.
-      </p>
-      <pre><code><span class="hljs-comment"># Base class (superclass)</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">speak</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">pass</span>
-
-<span class="hljs-comment"># Subclasses (derived classes)</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span><span class="hljs-params">(Animal)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">speak</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Woof!"</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span><span class="hljs-params">(Animal)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">speak</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Meow!"</span>
-
-dog = Dog()
-cat = Cat()
-
-print(dog.speak())  <span class="hljs-comment"># Output: Woof!</span>
-print(cat.speak())  <span class="hljs-comment"># Output: Meow!</span>
-</code></pre>
-      <h3 id="encapsulation">Encapsulation</h3>
-      <p>
-        Encapsulation is the concept of bundling data (attributes) and methods
-        (functions) that operate on that data within a single unit, called a
-        class. It hides the internal implementation details from the outside
-        world and provides controlled access through methods.
-      </p>
-      <pre><code><span class="hljs-comment"># Encapsulation example</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BankAccount</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, balance=<span class="hljs-number">0</span>)</span></span>:
-        <span class="hljs-keyword">self</span>._balance = balance  <span class="hljs-comment"># Private attribute with a single underscore</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">deposit</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, amount)</span></span>:
-        <span class="hljs-keyword">self</span>._balance += amount
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withdraw</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, amount)</span></span>:
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">self</span>._balance &gt;= <span class="hljs-symbol">amount:</span>
-            <span class="hljs-keyword">self</span>._balance -= amount
-        <span class="hljs-symbol">else:</span>
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"Insufficient balance"</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_balance</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>._balance
-
-account = BankAccount(<span class="hljs-number">1000</span>)
-account.deposit(<span class="hljs-number">500</span>)
-account.withdraw(<span class="hljs-number">300</span>)
-balance = account.get_balance()
-
-print(balance)  <span class="hljs-comment"># Output: 1200</span>
-</code></pre>
-      <h3 id="polymorphism">Polymorphism</h3>
-      <p>
-        Polymorphism allows objects of different classes to be treated as
-        objects of a common base class. It enables flexibility and dynamic
-        behavior, often achieved through method overriding and interfaces.
-      </p>
-      <pre><code><span class="hljs-comment"># Polymorphism example (method overriding)</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
-        pass
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span>(<span class="hljs-title">Shape</span>):</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, length, width)</span></span>:
-        <span class="hljs-keyword">self</span>.length = length
-        <span class="hljs-keyword">self</span>.width = width
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.length * <span class="hljs-keyword">self</span>.width
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span>(<span class="hljs-title">Shape</span>):</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, radius)</span></span>:
-        <span class="hljs-keyword">self</span>.radius = radius
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-number">3.14</span> * <span class="hljs-keyword">self</span>.radius * <span class="hljs-keyword">self</span>.radius
-
-shapes = [Rectangle(<span class="hljs-number">5</span>, <span class="hljs-number">4</span>), Circle(<span class="hljs-number">3</span>)]
-
-<span class="hljs-keyword">for</span> shape <span class="hljs-keyword">in</span> <span class="hljs-symbol">shapes:</span>
-    print(f<span class="hljs-string">"Area: {shape.area()}"</span>)
-
-<span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># Area: 20</span>
-<span class="hljs-comment"># Area: 28.26</span>
-</code></pre>
+      </div>
+      </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="object-oriented-programming-oop-">Object-Oriented Programming (OOP)</h2>
+        </div>
+        <p>
+          OOP is a programming paradigm that organizes code into objects, which
+          are instances of classes. It focuses on modeling real-world entities and
+          their interactions.
+        </p>
+        <div class="flex">
+          <div>
+            <h3 id="classes-and-objects">Classes and Objects</h3>
+        <p>
+          A class is a blueprint for creating objects. An object is an instance of
+          a class. Classes define attributes (data) and methods (functions) that
+          objects of that class can have.
+        </p>
+        <pre><code><span class="hljs-comment"># Class definition</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, name, age)</span></span>:
+          <span class="hljs-keyword">self</span>.name = name
+          <span class="hljs-keyword">self</span>.age = age
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+          <span class="hljs-keyword">return</span> f<span class="hljs-string">"Hello, my name is {self.name} and I am {self.age} years old."</span>
+  
+  <span class="hljs-comment"># Object creation</span>
+  person1 = Person(<span class="hljs-string">"Alice"</span>, <span class="hljs-number">25</span>)
+  person2 = Person(<span class="hljs-string">"Bob"</span>, <span class="hljs-number">30</span>)
+  
+  <span class="hljs-comment"># Using object methods</span>
+  message1 = person1.greet()
+  message2 = person2.greet()
+  
+  print(message1)
+  print(message2)
+  
+  <span class="hljs-comment"># Output:</span>
+  <span class="hljs-comment"># Hello, my name is Alice and I am 25 years old.</span>
+  <span class="hljs-comment"># Hello, my name is Bob and I am 30 years old.</span>
+  </code></pre>
+          </div>
+        <div>
+          <h3 id="inheritance">Inheritance</h3>
+        <p>
+          Inheritance is a mechanism where a new class (subclass or derived class)
+          can inherit properties and behaviors (attributes and methods) from an
+          existing class (base class or superclass). It promotes code reuse and
+          the creation of hierarchical relationships.
+        </p>
+        <pre><code><span class="hljs-comment"># Base class (superclass)</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">speak</span><span class="hljs-params">(self)</span>:</span>
+          <span class="hljs-keyword">pass</span>
+  
+  <span class="hljs-comment"># Subclasses (derived classes)</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span><span class="hljs-params">(Animal)</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">speak</span><span class="hljs-params">(self)</span>:</span>
+          <span class="hljs-keyword">return</span> <span class="hljs-string">"Woof!"</span>
+  
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span><span class="hljs-params">(Animal)</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">speak</span><span class="hljs-params">(self)</span>:</span>
+          <span class="hljs-keyword">return</span> <span class="hljs-string">"Meow!"</span>
+  
+  dog = Dog()
+  cat = Cat()
+  
+  print(dog.speak())  <span class="hljs-comment"># Output: Woof!</span>
+  print(cat.speak())  <span class="hljs-comment"># Output: Meow!</span>
+  </code></pre>
+        </div>
+        <div>
+          <h3 id="encapsulation">Encapsulation</h3>
+        <p>
+          Encapsulation is the concept of bundling data (attributes) and methods
+          (functions) that operate on that data within a single unit, called a
+          class. It hides the internal implementation details from the outside
+          world and provides controlled access through methods.
+        </p>
+        <pre><code><span class="hljs-comment"># Encapsulation example</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BankAccount</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, balance=<span class="hljs-number">0</span>)</span></span>:
+          <span class="hljs-keyword">self</span>._balance = balance  <span class="hljs-comment"># Private attribute with a single underscore</span>
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">deposit</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, amount)</span></span>:
+          <span class="hljs-keyword">self</span>._balance += amount
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withdraw</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, amount)</span></span>:
+          <span class="hljs-keyword">if</span> <span class="hljs-keyword">self</span>._balance &gt;= <span class="hljs-symbol">amount:</span>
+              <span class="hljs-keyword">self</span>._balance -= amount
+          <span class="hljs-symbol">else:</span>
+              <span class="hljs-keyword">return</span> <span class="hljs-string">"Insufficient balance"</span>
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_balance</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>._balance
+  
+  account = BankAccount(<span class="hljs-number">1000</span>)
+  account.deposit(<span class="hljs-number">500</span>)
+  account.withdraw(<span class="hljs-number">300</span>)
+  balance = account.get_balance()
+  
+  print(balance)  <span class="hljs-comment"># Output: 1200</span>
+  </code></pre>
+        </div>
+        <div>
+          <h3 id="polymorphism">Polymorphism</h3>
+        <p>
+          Polymorphism allows objects of different classes to be treated as
+          objects of a common base class. It enables flexibility and dynamic
+          behavior, often achieved through method overriding and interfaces.
+        </p>
+        <pre><code><span class="hljs-comment"># Polymorphism example (method overriding)</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+          pass
+  
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span>(<span class="hljs-title">Shape</span>):</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, length, width)</span></span>:
+          <span class="hljs-keyword">self</span>.length = length
+          <span class="hljs-keyword">self</span>.width = width
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.length * <span class="hljs-keyword">self</span>.width
+  
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span>(<span class="hljs-title">Shape</span>):</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, radius)</span></span>:
+          <span class="hljs-keyword">self</span>.radius = radius
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+          <span class="hljs-keyword">return</span> <span class="hljs-number">3.14</span> * <span class="hljs-keyword">self</span>.radius * <span class="hljs-keyword">self</span>.radius
+  
+  shapes = [Rectangle(<span class="hljs-number">5</span>, <span class="hljs-number">4</span>), Circle(<span class="hljs-number">3</span>)]
+  
+  <span class="hljs-keyword">for</span> shape <span class="hljs-keyword">in</span> <span class="hljs-symbol">shapes:</span>
+      print(f<span class="hljs-string">"Area: {shape.area()}"</span>)
+  
+  <span class="hljs-comment"># Output:</span>
+  <span class="hljs-comment"># Area: 20</span>
+  <span class="hljs-comment"># Area: 28.26</span>
+  </code></pre>
+        </div>
+        </div>
+      </div>
       <h2 id="file-handling">File Handling</h2>
       <p>
         File handling in Python involves working with files, including opening,
