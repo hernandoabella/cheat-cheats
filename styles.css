@@ -28,18 +28,12 @@ h6 {
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 header a {
   color: #000;
-}
-
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .dark-mode header a {
@@ -48,7 +42,6 @@ header a {
 
 .right-header-icons {
   display: flex;
-  margin-right: 20px;
 }
 
 .right-header-icons div {
@@ -68,15 +61,19 @@ i {
 }
 
 .sidebar {
-  height: 96.2vh;
+  height: 100vh;
   float: left;
   background: #e5e5e5;
   width: 220px;
   overflow-y: scroll;
 }
 
+.sidebar img {
+  width: 50px;
+}
+
 .sidebar ul li a {
-  padding: 10px;
+  padding: 5px;
   background: #ffffff;
   color: #000;
   display: flex;
@@ -98,7 +95,7 @@ i {
 
 .main-container {
   padding: 20px;
-  height: 96.2vh;
+  height: 100vh;
   overflow-y: scroll;
 }
 
@@ -126,8 +123,15 @@ pre {
   margin-top: 10px;
 }
 
-code {
-  border-radius: 5px;
+.copy-button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  right: 0;
+  top: 0px;
+  float: right;
+  padding: 10px;
 }
 
 .back {
@@ -149,6 +153,10 @@ code {
   color: #000;
   border-right: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
+}
+
+.subtitle {
+  padding: 20px 0px;
 }
 
 .subtitle h2::after {
@@ -181,5 +189,4 @@ code {
   background: linear-gradient(90deg, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-left: 20px;
 }
