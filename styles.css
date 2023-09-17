@@ -40,7 +40,6 @@ header a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 3px dashed #e5e5e5;
 }
 
 .dark-mode header a {
@@ -69,7 +68,7 @@ i {
 }
 
 .sidebar {
-  height: 95.7vh;
+  height: 96.2vh;
   float: left;
   background: #e5e5e5;
   width: 220px;
@@ -99,12 +98,12 @@ i {
 
 .main-container {
   padding: 20px;
-  height: 95.7vh;
+  height: 96.2vh;
   overflow-y: scroll;
 }
 
 .main-container ul li {
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -120,7 +119,7 @@ p {
 }
 
 .flex div {
-  gap: 20px;
+  width: 25%;
 }
 
 pre {
@@ -156,10 +155,10 @@ code {
   content: "";
   display: inline-block;
   position: relative;
-  top: -5px;
+  top: -6px;
   right: -20px;
   height: 3px;
-  width: 50%;
+  width: 60%;
   background: linear-gradient(90deg, #f32170, #ff6b08, #cf23cf, #fff);
   border-radius: 5px;
 }
@@ -178,6 +177,7 @@ code {
 .logo {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
   background: linear-gradient(90deg, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
