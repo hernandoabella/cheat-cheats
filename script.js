@@ -52,7 +52,7 @@ function addCopyButtonsToCodeBlocks() {
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      copyButton.innerHTML = '<i class="fas fa-check"></i>'; // Cambia el icono a un icono de confirmación
+      copyButton.innerHTML = 'Copied! <i class="fas fa-check"></i>'; // Cambia el icono a un icono de confirmación
       setTimeout(() => {
         copyButton.innerHTML =
           '<i class="fas fa-clipboard"></i>'; // Restaura el icono "Copy to Clipboard" después de 2 segundos
