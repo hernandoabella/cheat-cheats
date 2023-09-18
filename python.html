@@ -59,14 +59,12 @@
     
     <section class="main-container">
       <header>
-            <div class="inner-header">
               <div class="container">
                 <div class="logo">Programming Cheatsheets</div>
               </div>
             <div class="right-header-icons">
                 <a href="https://github.com/hernandoabella/programming-cheatsheets/blob/main/python.md" target="_blank"><div><i class="fa-brands fa-github-alt"></i></div></a>
                 <div onclick="toggleDarkMode()"><i class="fa-sharp fa-light fa-sunglasses"></i></div>
-            </div>
             </div>
       </header>
       <h1 id="python-cheatsheet-">Python Cheatsheet 🐍</h1>
@@ -172,16 +170,15 @@ Use it for longer explanations or docstrings.
                 <code>else</code> statements for decision-making.
               </p>
               <pre><code><span class="hljs-comment"># Conditional statement example</span>
-        age = 18
+age = 18
         
-        <span class="hljs-keyword">if</span> age &lt; 18:
-            <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are under 18 years old."</span>)
-        <span class="hljs-keyword">elif</span> age == 18:
-            <span class="hljs-built_in">print</span>(<span class="hljs-string">"You just turned 18!"</span>)
-        <span class="hljs-keyword">else</span>:
-            <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are over 18 years old."</span>)
-        </code></pre>
-        </div>
+<span class="hljs-keyword">if</span> age &lt; 18:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are under 18 years old."</span>)
+<span class="hljs-keyword">elif</span> age == 18:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"You just turned 18!"</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"You are over 18 years old."</span>)</code></pre>
+      </div>
           <div>
             <h3 id="loops-for-while-">Loops (for, while)</h3>
           <p>
@@ -399,7 +396,7 @@ fruits.remove(<span class="hljs-string">"banana"</span>)  <span class="hljs-comm
         block of code to be executed when the function is called. Functions can
         return values using the <code>return</code> statement.
       </p>
-      <pre><code>`<span class="hljs-comment"># Function definition</span>
+      <pre><code><span class="hljs-comment"># Function definition</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(name)</span>:</span>
     <span class="hljs-keyword">return</span> f<span class="hljs-string">"Hello, {name}!"</span>
 
@@ -408,7 +405,7 @@ message = greet(<span class="hljs-string">"Alice"</span>)
 print(message)
 
 <span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># Hello, Alice!`</span>
+<span class="hljs-comment"># Hello, Alice!</span>
 </code></pre>
         </div>
       <div>
@@ -615,13 +612,18 @@ print(result)  <span class="hljs-comment"># Output: 120`</span>
         </div>
         </div>
       </div>
-      <h2 id="file-handling">File Handling</h2>
+      <div>
+        <div class="subtitle">
+          <h2 id="file-handling">File Handling</h2>
+        </div>
       <p>
         File handling in Python involves working with files, including opening,
         reading, writing, and closing them. Python provides built-in functions
         and methods to work with files.
       </p>
-      <h3 id="reading-and-writing-files">Reading and Writing Files</h3>
+      <div class="flex">
+        <div>
+          <h3 id="reading-and-writing-files">Reading and Writing Files</h3>
       <ul>
         <li>
           Reading files: You can use the <code>open()</code> function to open a
@@ -658,7 +660,9 @@ file_path = <span class="hljs-string">"output.txt"</span>
 except Exception <span class="hljs-keyword">as</span> e:
     print(f<span class="hljs-string">"An error occurred: {e}"</span>)
 </code></pre>
-      <h3 id="working-with-csv-and-json">Working with CSV and JSON</h3>
+        </div>
+      <div>
+        <h3 id="working-with-csv-and-json">Working with CSV and JSON</h3>
       <ul>
         <li>
           CSV (Comma-Separated Values) files are used to store tabular data.
@@ -705,13 +709,21 @@ data = [[<span class="hljs-string">"Name"</span>, <span class="hljs-string">"Age
 <span class="hljs-title">with</span> open(json_file, <span class="hljs-string">"w"</span>) <span class="hljs-keyword">as</span> file:
     json.dump(<span class="hljs-class"><span class="hljs-keyword">data</span>, file)</span>
 </code></pre>
-      <h2 id="modules-and-packages">Modules and Packages</h2>
+      </div>
+      </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="modules-and-packages">Modules and Packages</h2>
+        </div>
       <p>
         Modules are Python files that contain reusable code, such as functions,
         classes, and variables. Packages are directories that contain multiple
         Python modules, making it easier to organize and distribute code.
       </p>
-      <h3 id="importing-modules">Importing Modules</h3>
+      <div class="flex">
+        <div>
+          <h3 id="importing-modules">Importing Modules</h3>
       <p>
         You can import modules using the <code>import</code> statement. This
         allows you to use functions, classes, and variables defined in the
@@ -734,6 +746,8 @@ print(<span class="hljs-built_in">result</span>)  <span class="hljs-comment"># O
 <span class="hljs-built_in">result</span> = pow(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
 print(<span class="hljs-built_in">result</span>)  <span class="hljs-comment"># Output: 8.0</span>
 </code></pre>
+        </div>
+     <div>
       <h3 id="creating-and-using-packages">Creating and Using Packages</h3>
       <p>
         Packages are created by organizing related modules in directories. To
@@ -757,7 +771,9 @@ result2 = module2.function2()
 <span class="hljs-keyword">print</span>(result1)
 <span class="hljs-keyword">print</span>(result2)
 </code></pre>
-      <h3 id="standard-library-overview">Standard Library Overview</h3>
+     </div>
+      <div>
+        <h3 id="standard-library-overview">Standard Library Overview</h3>
       <p>
         Python&#39;s standard library is a collection of modules and packages
         that come with Python. It provides a wide range of functionality for
@@ -773,13 +789,20 @@ print(current_time)  <span class="hljs-comment"># Output: Current date and time<
 <span class="hljs-built_in">date</span> = datetime.<span class="hljs-built_in">date</span>(<span class="hljs-number">2023</span>, <span class="hljs-number">9</span>, <span class="hljs-number">14</span>)
 print(<span class="hljs-built_in">date</span>)  <span class="hljs-comment"># Output: 2023-09-14</span>
 </code></pre>
-      <h2 id="regular-expressions-regex-">Regular Expressions (Regex)</h2>
+      </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="regular-expressions-regex-">Regular Expressions (Regex)</h2>
+        </div>
       <p>
         Regular expressions are powerful tools for pattern matching and
         searching within text. They allow you to define patterns and search for
         matches within strings.
       </p>
-      <h3 id="pattern-matching">Pattern Matching</h3>
+      <div class="flex">
+        <div>
+          <h3 id="pattern-matching">Pattern Matching</h3>
       <ul>
         <li>
           Patterns in regular expressions are sequences of characters that
@@ -811,7 +834,9 @@ matches = re.findall(pattern, text)
 <span class="hljs-comment"># info@example.com</span>
 <span class="hljs-comment"># support@example.co.uk</span>
 </code></pre>
-      <h3 id="regex-functions-re-module-">Regex Functions (re module)</h3>
+        </div>
+      <div>
+        <h3 id="regex-functions-re-module-">Regex Functions (re module)</h3>
       <p>
         Python&#39;s <code>re</code> module provides functions for working with
         regular expressions, including <code>match()</code>,
@@ -855,7 +880,9 @@ print(modified_text)
 <span class="hljs-comment"># Output:</span>
 <span class="hljs-comment"># Contact me at XXX-XXX-XXXX or XXX-XXX-XXXX.</span>
 </code></pre>
-      <h3 id="list-comprehensions">List Comprehensions</h3>
+      </div>
+      <div>
+        <h3 id="list-comprehensions">List Comprehensions</h3>
       <p>
         List comprehensions are a concise way to create lists in Python. They
         allow you to generate lists by applying an expression to each item in an
@@ -911,654 +938,734 @@ uppercase_words = [<span class="hljs-built_in">word</span>.<span class="hljs-bui
 
 print(uppercase_words)  <span class="hljs-comment"># Output: ['APPLE', 'BANANA', 'CHERRY']</span>
 </code></pre>
-      <h2 id="generators-and-iterators">Generators and Iterators</h2>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="generators-and-iterators">Generators and Iterators</h2>
+        </div>
       <p>
         Generators and iterators are used to work with sequences of data
         efficiently without loading the entire sequence into memory. They are
         especially useful when dealing with large or infinite sequences.
       </p>
-      <h3 id="generator-functions-and-expressions">
-        Generator Functions and Expressions
-      </h3>
-      <ul>
-        <li>
-          Generator functions are defined like regular functions but use the
-          <code>yield</code> keyword to yield values one at a time.
-        </li>
-        <li>
-          Generator expressions are similar to list comprehensions but use
-          parentheses <code>()</code> instead of square brackets
-          <code>[]</code>. They create generator objects on-the-fly.
-        </li>
-      </ul>
-      <p><strong>Generator Function:</strong></p>
-      <pre><code><span class="hljs-comment"># Generator function to generate squares of numbers</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square_numbers</span><span class="hljs-params">(n)</span>:</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, n + <span class="hljs-number">1</span>):
-        <span class="hljs-keyword">yield</span> i ** <span class="hljs-number">2</span>
-
-<span class="hljs-comment"># Creating a generator object</span>
-generator = square_numbers(<span class="hljs-number">5</span>)
-
-<span class="hljs-comment"># Iterating over the generator</span>
-<span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> generator:
-    print(num)
-
-<span class="hljs-comment"># Output: 1 4 9 16 25</span>
-</code></pre>
-      <p><strong>Generator Expression:</strong></p>
-      <pre><code><span class="hljs-comment"># Generator expression to generate even numbers</span>
-even_numbers = (x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>) <span class="hljs-keyword">if</span> x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
-
-<span class="hljs-comment"># Iterating over the generator expression</span>
-<span class="hljs-keyword">for</span> <span class="hljs-built_in">num</span> <span class="hljs-keyword">in</span> even_numbers:
-    print(<span class="hljs-built_in">num</span>)
-
-<span class="hljs-comment"># Output: 2 4 6 8 10</span>
-</code></pre>
-      <h3 id="iterating-over-data">Iterating Over Data</h3>
-      <ul>
-        <li>
-          Iterators are objects that implement the <code>__iter__()</code> and
-          <code>__next__()</code> methods, allowing you to loop through data one
-          element at a time.
-        </li>
-        <li>
-          Python provides built-in iterators for sequences like lists, tuples,
-          and strings.
-        </li>
-      </ul>
-      <p><strong>Using an Iterator:</strong></p>
-      <pre><code><span class="hljs-comment"># Using an iterator to loop through a list</span>
-fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>]
-<span class="hljs-keyword">iterator</span> = iter(fruits)
-
-<span class="hljs-keyword">while</span> <span class="hljs-type">True</span>:
-    <span class="hljs-keyword">try</span>:
-        fruit = next(<span class="hljs-keyword">iterator</span>)
-        print(fruit)
-    <span class="hljs-keyword">except</span> <span class="hljs-type">StopIteration</span>:
-        <span class="hljs-keyword">break</span>
-
-<span class="hljs-comment"># Output: apple banana cherry</span>
-</code></pre>
-      <p><strong>Built-in Iterators:</strong></p>
-      <pre><code><span class="hljs-comment"># Using a for loop with a built-in iterator</span>
-fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>]
-
-<span class="hljs-keyword">for</span> fruit <span class="hljs-keyword">in</span> fruits:
-    <span class="hljs-built_in">print</span>(fruit)
-
-<span class="hljs-comment"># Output: apple banana cherry</span>
-</code></pre>
-      <h2 id="decorators">Decorators</h2>
-      <p>
-        Decorators are a powerful and flexible way to modify or enhance the
-        behavior of functions or classes in Python. They are often used for
-        tasks like logging, authentication, and code instrumentation.
-      </p>
-      <h3 id="function-decorators">Function Decorators</h3>
-      <ul>
-        <li>
-          Function decorators are functions that take another function as an
-          argument and return a new function that usually extends or modifies
-          the behavior of the original function.
-        </li>
-        <li>
-          Decorators are often used with the <code>@</code> symbol followed by
-          the decorator function name above the function to be decorated.
-        </li>
-      </ul>
-      <p><strong>Function Decorator:</strong></p>
-      <pre><code><span class="hljs-comment"># Function decorator to measure the execution time of a function</span>
-<span class="hljs-keyword">import</span> time
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">measure_time</span><span class="hljs-params">(func)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kwargs)</span>:</span>
-        start_time = time.time()
-        result = func(*args, **kwargs)
-        end_time = time.time()
-        print(f<span class="hljs-string">"{func.__name__} took {end_time - start_time} seconds to execute."</span>)
-        <span class="hljs-keyword">return</span> result
-    <span class="hljs-keyword">return</span> wrapper
-
-<span class="hljs-comment"># Applying the decorator</span>
-<span class="hljs-meta">@measure_time</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">slow_function</span><span class="hljs-params">()</span>:</span>
-    time.sleep(<span class="hljs-number">2</span>)
-
-slow_function()
-
-<span class="hljs-comment"># Output: slow_function took 2.002147674560547 seconds to execute.</span>
-</code></pre>
-      <h3 id="class-decorators">Class Decorators</h3>
-      <p>
-        Class decorators are similar to function decorators but are applied to
-        classes. They can modify the class or its behavior.
-      </p>
-      <p><strong>Class Decorator:</strong></p>
-      <pre><code><span class="hljs-comment"># Class decorator to add a prefix to all methods of a class</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_prefix</span><span class="hljs-params">(prefix)</span></span>:
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorator</span><span class="hljs-params">(cls)</span></span>:
-        <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewClass</span>(<span class="hljs-title">cls</span>):</span>
-            <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__getattribute__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, name)</span></span>:
-                attr = <span class="hljs-keyword">super</span>().__getattribute_<span class="hljs-number">_</span>(name)
-                <span class="hljs-keyword">if</span> callable(attr):
-                    <span class="hljs-keyword">return</span> lambda *args, **<span class="hljs-symbol">kwargs:</span> attr(*args, **kwargs) + prefix
-                <span class="hljs-symbol">else:</span>
-                    <span class="hljs-keyword">return</span> attr
-        <span class="hljs-keyword">return</span> NewClass
-    <span class="hljs-keyword">return</span> decorator
-
-<span class="hljs-comment"># Applying the decorator</span>
-@add_prefix(<span class="hljs-string">"Hello, "</span>)
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeting</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"world"</span>
-
-g = Greeting()
-result = g.say_hello()
-
-print(result)  <span class="hljs-comment"># Output: Hello, world</span>
-</code></pre>
-      <h3 id="working-with-dates-and-times">Working with Dates and Times</h3>
-      <p>
-        Working with dates and times is a common task in programming, and Python
-        provides the <code>datetime</code> module to handle various date and
-        time operations.
-      </p>
-      <h3 id="datetime-module">datetime Module</h3>
-      <ul>
-        <li>
-          The <code>datetime</code> module in Python provides classes for
-          working with dates and times.
-        </li>
-        <li>
-          The <code>datetime</code> class is commonly used and includes
-          attributes like year, month, day, hour, minute, second, and
-          microsecond.
-        </li>
-      </ul>
-      <p>
-        <strong>Using the <code>datetime</code> Class:</strong>
-      </p>
-      <pre><code>import datetime
-
-# Creating a datetime object <span class="hljs-keyword">for</span> the current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
-current_datetime = datetime.datetime.<span class="hljs-built_in">now</span>()
-
-print(current_datetime)
-
-# Output: Current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
-</code></pre>
-      <h3 id="formatting-dates-and-times">Formatting Dates and Times</h3>
-      <ul>
-        <li>
-          You can format dates and times as strings using the
-          <code>strftime()</code> method of <code>datetime</code> objects.
-        </li>
-        <li>
-          The <code>strftime()</code> method takes a format string that
-          specifies how the date and time should be formatted.
-        </li>
-      </ul>
-      <p><strong>Formatting Dates and Times:</strong></p>
-      <pre><code>import datetime
-
-<span class="hljs-comment"># Creating a datetime object</span>
-date = datetime.datetime(<span class="hljs-number">2023</span>, <span class="hljs-number">9</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">30</span>)
-
-<span class="hljs-comment"># Formatting the datetime object as a string</span>
-formatted_date = date.strftime(<span class="hljs-string">"%Y-%m-%d %H:%M:%S"</span>)
-
-<span class="hljs-keyword">print</span>(formatted_date)
-
-<span class="hljs-comment"># Output: 2023-09-14 15:30:00</span>
-</code></pre>
-      <h2 id="concurrency-and-parallelism">Concurrency and Parallelism</h2>
-      <ul>
-        <li>
-          Concurrency is the ability to execute multiple tasks in an interleaved
-          manner, which can improve a program&#39;s efficiency when it becomes
-          blocked during I/O operations.
-        </li>
-        <li>
-          Parallelism involves running multiple tasks simultaneously on multiple
-          cores or processors, which speeds up tasks that can be executed in
-          parallel.
-        </li>
-      </ul>
-      <h3 id="threading">Threading</h3>
-      <ul>
-        <li>
-          Threads are lightweight subprocesses that share the same memory space
-          as the main process and can execute concurrently.
-        </li>
-        <li>
-          In Python, the <code>threading</code> module provides a way to create
-          and work with threads.
-        </li>
-      </ul>
-      <p><strong>Example (Creating a Thread):</strong></p>
-      <pre><code>`<span class="hljs-keyword">import</span> threading
-<span class="hljs-keyword">import</span> time
-
-<span class="hljs-comment"># Function to print numbers</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_numbers</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
-        print(f<span class="hljs-string">"Number {i}"</span>)
-        time.sleep(<span class="hljs-number">1</span>)
-
-<span class="hljs-comment"># Function to print letters</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_letters</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> <span class="hljs-string">"abcde"</span>:
-        print(f<span class="hljs-string">"Letter {letter}"</span>)
-        time.sleep(<span class="hljs-number">1</span>)
-
-<span class="hljs-comment"># Create two threads</span>
-t1 = threading.Thread(target=print_numbers)
-t2 = threading.Thread(target=print_letters)
-
-<span class="hljs-comment"># Start the threads</span>
-t1.start()
-t2.start()
-
-<span class="hljs-comment"># Wait for both threads to finish</span>
-t1.join()
-t2.join()
-
-<span class="hljs-comment"># Output: Numbers and letters are printed in an interleaved order`</span>
-</code></pre>
-      <h3 id="multiprocessing">Multiprocessing</h3>
-      <ul>
-        <li>
-          Multiprocessing is the simultaneous execution of multiple independent
-          processes that can take advantage of multiple CPU cores.
-        </li>
-        <li>
-          In Python, the <code>multiprocessing</code> module allows you to
-          create processes and perform tasks in parallel.
-        </li>
-      </ul>
-      <p><strong>Creating a Process:</strong></p>
-      <pre><code><span class="hljs-keyword">import</span> multiprocessing
-<span class="hljs-keyword">import</span> time
-
-<span class="hljs-comment"># Function to print numbers</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_numbers</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
-        print(f<span class="hljs-string">"Number {i}"</span>)
-        time.sleep(<span class="hljs-number">1</span>)
-
-<span class="hljs-comment"># Function to print letters</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_letters</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> <span class="hljs-string">"abcde"</span>:
-        print(f<span class="hljs-string">"Letter {letter}"</span>)
-        time.sleep(<span class="hljs-number">1</span>)
-
-<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
-    <span class="hljs-comment"># Create two processes</span>
-    p1 = multiprocessing.Process(target=print_numbers)
-    p2 = multiprocessing.Process(target=print_letters)
-
-    <span class="hljs-comment"># Start the processes</span>
-    p1.start()
-    p2.start()
-
-    <span class="hljs-comment"># Wait for both processes to finish</span>
-    p1.join()
-    p2.join()
-
-<span class="hljs-comment"># Output: Numbers and letters are printed in parallel</span>
-</code></pre>
-      <h2 id="database-access-sql-and-nosql-">
-        Database Access (SQL and NoSQL)
-      </h2>
-      <ul>
-        <li>
-          SQL (Structured Query Language) is used to manage relational
-          databases.
-        </li>
-        <li>
-          NoSQL refers to a variety of database systems that do not follow a
-          relational data model.
-        </li>
-      </ul>
-      <h3 id="connecting-to-databases">Connecting to Databases</h3>
-      <ul>
-        <li>
-          To connect to an SQL database, a specific library for the database is
-          typically used, such as <code>sqlite3</code> for SQLite or
-          <code>mysql.connector</code> for MySQL.
-        </li>
-        <li>
-          For NoSQL databases, a specific library like <code>pymongo</code> for
-          MongoDB is used.
-        </li>
-      </ul>
-      <p><strong>Connecting to an SQLite Database:</strong></p>
-      <pre><code><span class="hljs-built_in">import</span> sqlite3
-
-<span class="hljs-comment"># Connect to an SQLite database (or create a new one)</span>
-<span class="hljs-attr">conn</span> = sqlite3.connect(<span class="hljs-string">"mydatabase.db"</span>)
-
-<span class="hljs-comment"># Create a cursor object to execute queries</span>
-<span class="hljs-attr">cursor</span> = conn.cursor()
-
-<span class="hljs-comment"># Close the connection when you're done</span>
-conn.close()
-</code></pre>
-      <h3 id="performing-queries">Performing Queries</h3>
-      <ul>
-        <li>
-          To execute SQL queries, the cursor object created during the
-          connection is used.
-        </li>
-        <li>
-          SQL queries can be executed using the <code>execute()</code> method of
-          the cursor, and results can be retrieved using methods like
-          <code>fetchone()</code> or <code>fetchall()</code>.
-        </li>
-      </ul>
-      <p><strong>Executing an SQL Query:</strong></p>
-      <pre><code><span class="hljs-built_in">import</span> sqlite3
-
-<span class="hljs-comment"># Connect to an SQLite database</span>
-<span class="hljs-attr">conn</span> = sqlite3.connect(<span class="hljs-string">"mydatabase.db"</span>)
-<span class="hljs-attr">cursor</span> = conn.cursor()
-
-<span class="hljs-comment"># Execute a SELECT query</span>
-cursor.execute(<span class="hljs-string">"SELECT * FROM users"</span>)
-
-<span class="hljs-comment"># Get all the results</span>
-<span class="hljs-attr">results</span> = cursor.fetchall()
-
-<span class="hljs-comment"># Iterate through the results</span>
-for row <span class="hljs-keyword">in</span> results:
-    print(row)
-
-<span class="hljs-comment"># Close the connection when you're done</span>
-conn.close()
-</code></pre>
-      <p><strong>Using MongoDB with pymongo:</strong></p>
-      <pre><code><span class="hljs-built_in">import</span> pymongo
-
-<span class="hljs-comment"># Connect to a MongoDB database</span>
-<span class="hljs-attr">client</span> = pymongo.MongoClient(<span class="hljs-string">"mongodb://localhost:27017/"</span>)
-<span class="hljs-attr">db</span> = client[<span class="hljs-string">"mydatabase"</span>]
-
-<span class="hljs-comment"># Get a collection (equivalent to a table in SQL)</span>
-<span class="hljs-attr">collection</span> = db[<span class="hljs-string">"customers"</span>]
-
-<span class="hljs-comment"># Insert a document</span>
-<span class="hljs-attr">customer</span> = {<span class="hljs-string">"name"</span>: <span class="hljs-string">"John"</span>, <span class="hljs-string">"email"</span>: <span class="hljs-string">"john@example.com"</span>}
-<span class="hljs-attr">inserted_id</span> = collection.insert_one(customer).inserted_id
-
-<span class="hljs-comment"># Find documents</span>
-<span class="hljs-attr">result</span> = collection.find_one({<span class="hljs-string">"name"</span>: <span class="hljs-string">"John"</span>})
-print(result)
-
-<span class="hljs-comment"># Close the connection when you're done</span>
-client.close()
-</code></pre>
-      <h2 id="working-with-apis">Working with APIs</h2>
-      <p>
-        Working with APIs (Application Programming Interfaces) allows you to
-        interact with external services or systems programmatically.
-      </p>
-      <h3 id="making-http-requests">Making HTTP Requests</h3>
-      <ul>
-        <li>
-          To interact with web APIs, you can use the
-          <code>requests</code> library in Python to make HTTP requests, such as
-          GET, POST, PUT, and DELETE.
-        </li>
-        <li>
-          You can include headers, parameters, and data in your requests as
-          needed.
-        </li>
-      </ul>
-      <p><strong>Making a GET Request:</strong></p>
-      <pre><code><span class="hljs-keyword">import</span> requests
-
-<span class="hljs-comment"># Making a GET request to a sample API</span>
-response = requests.get(<span class="hljs-string">"https://jsonplaceholder.typicode.com/posts/1"</span>)
-
-<span class="hljs-comment"># Checking the response status code</span>
-<span class="hljs-keyword">if</span> response.status_code == <span class="hljs-number">200</span>:
-    <span class="hljs-keyword">print</span>(<span class="hljs-string">"Request successful"</span>)
-    data = response.json()
-    <span class="hljs-keyword">print</span>(data)
-<span class="hljs-keyword">else</span>:
-    <span class="hljs-keyword">print</span>(<span class="hljs-string">"Request failed with status code:"</span>, response.status_code)
-</code></pre>
-      <h3 id="parsing-json-responses">Parsing JSON Responses</h3>
-      <ul>
-        <li>
-          When working with web APIs, it&#39;s common to receive responses in
-          JSON (JavaScript Object Notation) format.
-        </li>
-        <li>
-          You can use Python&#39;s <code>json</code> module to parse JSON
-          responses into Python data structures.
-        </li>
-      </ul>
-      <p><strong>Parsing JSON Response:</strong></p>
-      <pre><code><span class="hljs-built_in">import</span> requests
-<span class="hljs-built_in">import</span> json
-
-<span class="hljs-comment"># Making a GET request to a JSON API</span>
-<span class="hljs-attr">response</span> = requests.get(<span class="hljs-string">"https://jsonplaceholder.typicode.com/posts/1"</span>)
-
-<span class="hljs-keyword">if</span> response.<span class="hljs-attr">status_code</span> == <span class="hljs-number">200</span>:
-    <span class="hljs-attr">data</span> = response.json()
-
-    <span class="hljs-comment"># Accessing JSON data</span>
-    <span class="hljs-attr">title</span> = data[<span class="hljs-string">"title"</span>]
-    <span class="hljs-attr">body</span> = data[<span class="hljs-string">"body"</span>]
-
-    print(<span class="hljs-string">"Title:"</span>, title)
-    print(<span class="hljs-string">"Body:"</span>, body)
-<span class="hljs-keyword">else</span>:
-    print(<span class="hljs-string">"Request failed with status code:"</span>, response.status_code)
-</code></pre>
-      <h2 id="virtual-environments">Virtual Environments</h2>
-      <p>
-        Virtual environments allow you to create isolated Python environments
-        where you can install packages and dependencies separately from your
-        system-wide Python installation.
-      </p>
-      <h3 id="creating-and-managing-virtual-environments">
-        Creating and Managing Virtual Environments
-      </h3>
-      <ul>
-        <li>
-          Python provides the <code>venv</code> module to create and manage
-          virtual environments.
-        </li>
-        <li>
-          You can create a new virtual environment using the
-          <code>venv</code> module and activate it to work within that
-          environment.
-        </li>
-      </ul>
-      <p><strong>Creating a Virtual Environment:</strong></p>
-      <pre><code><span class="hljs-comment"># Create a new virtual environment</span>
-python -m venv myenv
-
-<span class="hljs-comment"># Activate the virtual environment (Windows)</span>
-myenv\Scripts\<span class="hljs-built_in">activate</span>
-
-<span class="hljs-comment"># Activate the virtual environment (Linux/macOS)</span>
-source myenv/bin/<span class="hljs-built_in">activate</span>
-</code></pre>
-      <h3 id="dependencies-and-requirements-files">
-        Dependencies and Requirements Files
-      </h3>
-      <ul>
-        <li>
-          Dependencies are Python packages or libraries required for your
-          project to run.
-        </li>
-        <li>
-          You can list project dependencies in a
-          <code>requirements.txt</code> file.
-        </li>
-        <li>
-          Use <code>pip</code> to install dependencies from the
-          <code>requirements.txt</code> file.
-        </li>
-      </ul>
-      <p>
-        <strong>Creating a <code>requirements.txt</code> File:</strong>
-      </p>
-      <pre><code><span class="hljs-comment"># requirements.txt</span>
-<span class="hljs-attr">requests</span>==<span class="hljs-number">2.26</span>.<span class="hljs-number">0</span>
-<span class="hljs-attr">flask</span>==<span class="hljs-number">2.1</span>.<span class="hljs-number">1</span>
-</code></pre>
-      <p>
-        <strong
-          >Installing Dependencies from <code>requirements.txt</code>:</strong
-        >
-      </p>
-      <pre><code><span class="hljs-comment"># Install dependencies from the requirements file</span>
-pip <span class="hljs-keyword">install</span> -r requirements.txt
-</code></pre>
-      <h3 id="debugging-and-profiling">Debugging and Profiling</h3>
-      <ul>
-        <li>
-          Debugging is the process of identifying and fixing errors (bugs) in
-          your code.
-        </li>
-        <li>
-          Profiling involves analyzing the performance of your code to identify
-          bottlenecks and optimize it.
-        </li>
-      </ul>
-      <h3 id="debugging-techniques">Debugging Techniques</h3>
-      <ul>
-        <li>
-          Python provides several debugging tools, including the built-in
-          <code>pdb</code> module for debugging and third-party tools like
-          <code>pdb++</code> and integrated development environments (IDEs) with
-          debugging features.
-        </li>
-      </ul>
-      <p>
-        <strong>Using <code>pdb</code> for Debugging:</strong>
-      </p>
-      <pre><code>import pdb
-
-def <span class="hljs-built_in">divide</span>(<span class="hljs-keyword">a</span>, b):
-    <span class="hljs-built_in">result</span> = <span class="hljs-keyword">a</span> / b
-    <span class="hljs-literal">return</span> <span class="hljs-built_in">result</span>
-
-pdb.set_trace()  <span class="hljs-comment"># Start debugging session</span>
-num1 = <span class="hljs-number">10</span>
-num2 = <span class="hljs-number">0</span>
-<span class="hljs-built_in">result</span> = <span class="hljs-built_in">divide</span>(num1, num2)
-print(<span class="hljs-string">"Result:"</span>, <span class="hljs-built_in">result</span>)
-</code></pre>
-      <h3 id="profiling-python-code">Profiling Python Code</h3>
-      <ul>
-        <li>
-          Profiling tools help you measure the execution time of different parts
-          of your code.
-        </li>
-        <li>
-          Python&#39;s <code>cProfile</code> module is a built-in profiler that
-          provides information about function call times and counts.
-        </li>
-      </ul>
-      <p>
-        <strong>Profiling with <code>cProfile</code>:</strong>
-      </p>
-      <pre><code>import cProfile
-
-def slow_function():
-    <span class="hljs-keyword">total</span> = 0
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-keyword">range</span>(1, 100000):
-        <span class="hljs-keyword">total</span> += <span class="hljs-built_in">i</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">total</span>
-
-<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
-    cProfile.<span class="hljs-keyword">run</span>(<span class="hljs-string">"slow_function()"</span>)
-</code></pre>
-      <h3 id="best-practices">Best Practices</h3>
-      <ul>
-        <li>
-          Adhering to best practices helps you write clean, readable, and
-          maintainable Python code.
-        </li>
-        <li>
-          Following established conventions and guidelines enhances
-          collaboration with other developers.
-        </li>
-      </ul>
-      <h3 id="pep-8-python-enhancement-proposals-">
-        PEP 8 (Python Enhancement Proposals)
-      </h3>
-      <ul>
-        <li>PEP 8 is the official style guide for Python code.</li>
-        <li>
-          It defines conventions for code layout, naming conventions, and more.
-        </li>
-        <li>Adhering to PEP 8 improves code consistency and readability.</li>
-      </ul>
-      <h3 id="code-style-and-conventions">Code Style and Conventions</h3>
-      <ul>
-        <li>
-          Consistent indentation (typically 4 spaces or a tab) should be used
-          throughout your code.
-        </li>
-        <li>
-          Follow naming conventions for variables, functions, and classes. For
-          example, use <code>snake_case</code> for variables and functions and
-          <code>CamelCase</code> for classes.
-        </li>
-        <li>
-          Keep lines of code reasonably short (around 79-80 characters) to
-          improve readability.
-        </li>
-        <li>
-          Use meaningful variable and function names to make your code
-          self-explanatory.
-        </li>
-        <li>Avoid overly complex code and nesting.</li>
-        <li>
-          Use comments and docstrings to provide explanations and documentation
-          for your code.
-        </li>
-      </ul>
-      <h3 id="documentation-and-comments">Documentation and Comments</h3>
-      <ul>
-        <li>
-          Documentation is essential for understanding how code works and how to
-          use it.
-        </li>
-        <li>Comments and docstrings provide explanations and context.</li>
-        <li>
-          Docstrings are used to document modules, classes, and functions.
-        </li>
-      </ul>
-      <p><strong>Docstring:</strong></p>
-      <pre><code><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a, b)</span>:</span>
-    <span class="hljs-string">"""
-    Adds two numbers.
-
-    Args:
-        a (int): The first number.
-        b (int): The second number.
-
-    Returns:
-        int: The sum of the two numbers.
-    """</span>
-    <span class="hljs-keyword">return</span> a + b
-</code></pre>
-      <p><strong>Inline Comment:</strong></p>
-      <pre><code><span class="hljs-comment"># Calculate the average of a list of numbers</span>
-<span class="hljs-built_in">average</span> = <span class="hljs-built_in">sum</span>(numbers) / <span class="hljs-built_in">len</span>(numbers)
-</code></pre>
+      <div class="flex">
+        <div>
+          <h3 id="generator-functions-and-expressions">
+            Generator Functions and Expressions
+          </h3>
+          <ul>
+            <li>
+              Generator functions are defined like regular functions but use the
+              <code>yield</code> keyword to yield values one at a time.
+            </li>
+            <li>
+              Generator expressions are similar to list comprehensions but use
+              parentheses <code>()</code> instead of square brackets
+              <code>[]</code>. They create generator objects on-the-fly.
+            </li>
+          </ul>
+          <p><strong>Generator Function:</strong></p>
+          <pre><code><span class="hljs-comment"># Generator function to generate squares of numbers</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square_numbers</span><span class="hljs-params">(n)</span>:</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, n + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">yield</span> i ** <span class="hljs-number">2</span>
+    
+    <span class="hljs-comment"># Creating a generator object</span>
+    generator = square_numbers(<span class="hljs-number">5</span>)
+    
+    <span class="hljs-comment"># Iterating over the generator</span>
+    <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> generator:
+        print(num)
+    
+    <span class="hljs-comment"># Output: 1 4 9 16 25</span>
+    </code></pre>
+          <p><strong>Generator Expression:</strong></p>
+          <pre><code><span class="hljs-comment"># Generator expression to generate even numbers</span>
+    even_numbers = (x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>) <span class="hljs-keyword">if</span> x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+    
+    <span class="hljs-comment"># Iterating over the generator expression</span>
+    <span class="hljs-keyword">for</span> <span class="hljs-built_in">num</span> <span class="hljs-keyword">in</span> even_numbers:
+        print(<span class="hljs-built_in">num</span>)
+    
+    <span class="hljs-comment"># Output: 2 4 6 8 10</span>
+    </code></pre>
+        </div>
+        <div>
+          <h3 id="iterating-over-data">Iterating Over Data</h3>
+        <ul>
+          <li>
+            Iterators are objects that implement the <code>__iter__()</code> and
+            <code>__next__()</code> methods, allowing you to loop through data one
+            element at a time.
+          </li>
+          <li>
+            Python provides built-in iterators for sequences like lists, tuples,
+            and strings.
+          </li>
+        </ul>
+        <p><strong>Using an Iterator:</strong></p>
+        <pre><code><span class="hljs-comment"># Using an iterator to loop through a list</span>
+  fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>]
+  <span class="hljs-keyword">iterator</span> = iter(fruits)
+  
+  <span class="hljs-keyword">while</span> <span class="hljs-type">True</span>:
+      <span class="hljs-keyword">try</span>:
+          fruit = next(<span class="hljs-keyword">iterator</span>)
+          print(fruit)
+      <span class="hljs-keyword">except</span> <span class="hljs-type">StopIteration</span>:
+          <span class="hljs-keyword">break</span>
+  
+  <span class="hljs-comment"># Output: apple banana cherry</span>
+  </code></pre>
+        <p><strong>Built-in Iterators:</strong></p>
+        <pre><code><span class="hljs-comment"># Using a for loop with a built-in iterator</span>
+  fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>]
+  
+  <span class="hljs-keyword">for</span> fruit <span class="hljs-keyword">in</span> fruits:
+      <span class="hljs-built_in">print</span>(fruit)
+  
+  <span class="hljs-comment"># Output: apple banana cherry</span>
+  </code></pre>
+        </div>
+      </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="decorators">Decorators</h2>
+        </div>
+        <p>
+          Decorators are a powerful and flexible way to modify or enhance the
+          behavior of functions or classes in Python. They are often used for
+          tasks like logging, authentication, and code instrumentation.
+        </p>
+        <div class="flex">
+          <div>
+            <h3 id="function-decorators">Function Decorators</h3>
+        <ul>
+          <li>
+            Function decorators are functions that take another function as an
+            argument and return a new function that usually extends or modifies
+            the behavior of the original function.
+          </li>
+          <li>
+            Decorators are often used with the <code>@</code> symbol followed by
+            the decorator function name above the function to be decorated.
+          </li>
+        </ul>
+        <p><strong>Function Decorator:</strong></p>
+        <pre><code><span class="hljs-comment"># Function decorator to measure the execution time of a function</span>
+  <span class="hljs-keyword">import</span> time
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">measure_time</span><span class="hljs-params">(func)</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kwargs)</span>:</span>
+          start_time = time.time()
+          result = func(*args, **kwargs)
+          end_time = time.time()
+          print(f<span class="hljs-string">"{func.__name__} took {end_time - start_time} seconds to execute."</span>)
+          <span class="hljs-keyword">return</span> result
+      <span class="hljs-keyword">return</span> wrapper
+  
+  <span class="hljs-comment"># Applying the decorator</span>
+  <span class="hljs-meta">@measure_time</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">slow_function</span><span class="hljs-params">()</span>:</span>
+      time.sleep(<span class="hljs-number">2</span>)
+  
+  slow_function()
+  
+  <span class="hljs-comment"># Output: slow_function took 2.002147674560547 seconds to execute.</span>
+  </code></pre>
+          </div>
+        <div>
+          <h3 id="class-decorators">Class Decorators</h3>
+        <p>
+          Class decorators are similar to function decorators but are applied to
+          classes. They can modify the class or its behavior.
+        </p>
+        <p><strong>Class Decorator:</strong></p>
+        <pre><code><span class="hljs-comment"># Class decorator to add a prefix to all methods of a class</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_prefix</span><span class="hljs-params">(prefix)</span></span>:
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorator</span><span class="hljs-params">(cls)</span></span>:
+          <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewClass</span>(<span class="hljs-title">cls</span>):</span>
+              <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__getattribute__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, name)</span></span>:
+                  attr = <span class="hljs-keyword">super</span>().__getattribute_<span class="hljs-number">_</span>(name)
+                  <span class="hljs-keyword">if</span> callable(attr):
+                      <span class="hljs-keyword">return</span> lambda *args, **<span class="hljs-symbol">kwargs:</span> attr(*args, **kwargs) + prefix
+                  <span class="hljs-symbol">else:</span>
+                      <span class="hljs-keyword">return</span> attr
+          <span class="hljs-keyword">return</span> NewClass
+      <span class="hljs-keyword">return</span> decorator
+  
+  <span class="hljs-comment"># Applying the decorator</span>
+  @add_prefix(<span class="hljs-string">"Hello, "</span>)
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeting</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+          <span class="hljs-keyword">return</span> <span class="hljs-string">"world"</span>
+  
+  g = Greeting()
+  result = g.say_hello()
+  
+  print(result)  <span class="hljs-comment"># Output: Hello, world</span>
+  </code></pre>
+        <h3 id="working-with-dates-and-times">Working with Dates and Times</h3>
+        <p>
+          Working with dates and times is a common task in programming, and Python
+          provides the <code>datetime</code> module to handle various date and
+          time operations.
+        </p>
+        </div>
+        <div>
+          <h3 id="datetime-module">datetime Module</h3>
+        <ul>
+          <li>
+            The <code>datetime</code> module in Python provides classes for
+            working with dates and times.
+          </li>
+          <li>
+            The <code>datetime</code> class is commonly used and includes
+            attributes like year, month, day, hour, minute, second, and
+            microsecond.
+          </li>
+        </ul>
+        <p>
+          <strong>Using the <code>datetime</code> Class:</strong>
+        </p>
+        <pre><code>import datetime
+  
+  # Creating a datetime object <span class="hljs-keyword">for</span> the current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
+  current_datetime = datetime.datetime.<span class="hljs-built_in">now</span>()
+  
+  print(current_datetime)
+  
+  # Output: Current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
+  </code></pre>
+        </div>
+        <div>
+          <h3 id="formatting-dates-and-times">Formatting Dates and Times</h3>
+        <ul>
+          <li>
+            You can format dates and times as strings using the
+            <code>strftime()</code> method of <code>datetime</code> objects.
+          </li>
+          <li>
+            The <code>strftime()</code> method takes a format string that
+            specifies how the date and time should be formatted.
+          </li>
+        </ul>
+        <p><strong>Formatting Dates and Times:</strong></p>
+        <pre><code>import datetime
+  
+  <span class="hljs-comment"># Creating a datetime object</span>
+  date = datetime.datetime(<span class="hljs-number">2023</span>, <span class="hljs-number">9</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">30</span>)
+  
+  <span class="hljs-comment"># Formatting the datetime object as a string</span>
+  formatted_date = date.strftime(<span class="hljs-string">"%Y-%m-%d %H:%M:%S"</span>)
+  
+  <span class="hljs-keyword">print</span>(formatted_date)
+  
+  <span class="hljs-comment"># Output: 2023-09-14 15:30:00</span>
+  </code></pre>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="concurrency-and-parallelism">Concurrency and Parallelism</h2>
+        </div>
+        <ul>
+          <li>
+            Concurrency is the ability to execute multiple tasks in an interleaved
+            manner, which can improve a program&#39;s efficiency when it becomes
+            blocked during I/O operations.
+          </li>
+          <li>
+            Parallelism involves running multiple tasks simultaneously on multiple
+            cores or processors, which speeds up tasks that can be executed in
+            parallel.
+          </li>
+        </ul>
+        <div class="flex">
+          <div>
+            <h3 id="threading">Threading</h3>
+        <ul>
+          <li>
+            Threads are lightweight subprocesses that share the same memory space
+            as the main process and can execute concurrently.
+          </li>
+          <li>
+            In Python, the <code>threading</code> module provides a way to create
+            and work with threads.
+          </li>
+        </ul>
+        <p><strong>Example (Creating a Thread):</strong></p>
+        <pre><code>`<span class="hljs-keyword">import</span> threading
+  <span class="hljs-keyword">import</span> time
+  
+  <span class="hljs-comment"># Function to print numbers</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_numbers</span><span class="hljs-params">()</span>:</span>
+      <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+          print(f<span class="hljs-string">"Number {i}"</span>)
+          time.sleep(<span class="hljs-number">1</span>)
+  
+  <span class="hljs-comment"># Function to print letters</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_letters</span><span class="hljs-params">()</span>:</span>
+      <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> <span class="hljs-string">"abcde"</span>:
+          print(f<span class="hljs-string">"Letter {letter}"</span>)
+          time.sleep(<span class="hljs-number">1</span>)
+  
+  <span class="hljs-comment"># Create two threads</span>
+  t1 = threading.Thread(target=print_numbers)
+  t2 = threading.Thread(target=print_letters)
+  
+  <span class="hljs-comment"># Start the threads</span>
+  t1.start()
+  t2.start()
+  
+  <span class="hljs-comment"># Wait for both threads to finish</span>
+  t1.join()
+  t2.join()
+  
+  <span class="hljs-comment"># Output: Numbers and letters are printed in an interleaved order`</span>
+  </code></pre>
+          </div>
+        <div>
+          <h3 id="multiprocessing">Multiprocessing</h3>
+        <ul>
+          <li>
+            Multiprocessing is the simultaneous execution of multiple independent
+            processes that can take advantage of multiple CPU cores.
+          </li>
+          <li>
+            In Python, the <code>multiprocessing</code> module allows you to
+            create processes and perform tasks in parallel.
+          </li>
+        </ul>
+        <p><strong>Creating a Process:</strong></p>
+        <pre><code><span class="hljs-keyword">import</span> multiprocessing
+  <span class="hljs-keyword">import</span> time
+  
+  <span class="hljs-comment"># Function to print numbers</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_numbers</span><span class="hljs-params">()</span>:</span>
+      <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+          print(f<span class="hljs-string">"Number {i}"</span>)
+          time.sleep(<span class="hljs-number">1</span>)
+  
+  <span class="hljs-comment"># Function to print letters</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_letters</span><span class="hljs-params">()</span>:</span>
+      <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> <span class="hljs-string">"abcde"</span>:
+          print(f<span class="hljs-string">"Letter {letter}"</span>)
+          time.sleep(<span class="hljs-number">1</span>)
+  
+  <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+      <span class="hljs-comment"># Create two processes</span>
+      p1 = multiprocessing.Process(target=print_numbers)
+      p2 = multiprocessing.Process(target=print_letters)
+  
+      <span class="hljs-comment"># Start the processes</span>
+      p1.start()
+      p2.start()
+  
+      <span class="hljs-comment"># Wait for both processes to finish</span>
+      p1.join()
+      p2.join()
+  
+  <span class="hljs-comment"># Output: Numbers and letters are printed in parallel</span>
+  </code></pre>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="database-access-sql-and-nosql-">
+            Database Access (SQL and NoSQL)
+          </h2>
+        </div>
+        <ul>
+          <li>
+            SQL (Structured Query Language) is used to manage relational
+            databases.
+          </li>
+          <li>
+            NoSQL refers to a variety of database systems that do not follow a
+            relational data model.
+          </li>
+        </ul>
+        <div class="flex">
+          <div>
+            <h3 id="connecting-to-databases">Connecting to Databases</h3>
+          <ul>
+            <li>
+              To connect to an SQL database, a specific library for the database is
+              typically used, such as <code>sqlite3</code> for SQLite or
+              <code>mysql.connector</code> for MySQL.
+            </li>
+            <li>
+              For NoSQL databases, a specific library like <code>pymongo</code> for
+              MongoDB is used.
+            </li>
+          </ul>
+          <p><strong>Connecting to an SQLite Database:</strong></p>
+          <pre><code><span class="hljs-built_in">import</span> sqlite3
+    
+    <span class="hljs-comment"># Connect to an SQLite database (or create a new one)</span>
+    <span class="hljs-attr">conn</span> = sqlite3.connect(<span class="hljs-string">"mydatabase.db"</span>)
+    
+    <span class="hljs-comment"># Create a cursor object to execute queries</span>
+    <span class="hljs-attr">cursor</span> = conn.cursor()
+    
+    <span class="hljs-comment"># Close the connection when you're done</span>
+    conn.close()
+    </code></pre>
+          </div>
+          <div>
+            <h3 id="performing-queries">Performing Queries</h3>
+          <ul>
+            <li>
+              To execute SQL queries, the cursor object created during the
+              connection is used.
+            </li>
+            <li>
+              SQL queries can be executed using the <code>execute()</code> method of
+              the cursor, and results can be retrieved using methods like
+              <code>fetchone()</code> or <code>fetchall()</code>.
+            </li>
+          </ul>
+          <p><strong>Executing an SQL Query:</strong></p>
+          <pre><code><span class="hljs-built_in">import</span> sqlite3
+    
+    <span class="hljs-comment"># Connect to an SQLite database</span>
+    <span class="hljs-attr">conn</span> = sqlite3.connect(<span class="hljs-string">"mydatabase.db"</span>)
+    <span class="hljs-attr">cursor</span> = conn.cursor()
+    
+    <span class="hljs-comment"># Execute a SELECT query</span>
+    cursor.execute(<span class="hljs-string">"SELECT * FROM users"</span>)
+    
+    <span class="hljs-comment"># Get all the results</span>
+    <span class="hljs-attr">results</span> = cursor.fetchall()
+    
+    <span class="hljs-comment"># Iterate through the results</span>
+    for row <span class="hljs-keyword">in</span> results:
+        print(row)
+    
+    <span class="hljs-comment"># Close the connection when you're done</span>
+    conn.close()
+    </code></pre>
+          <p><strong>Using MongoDB with pymongo:</strong></p>
+          <pre><code><span class="hljs-built_in">import</span> pymongo
+    
+    <span class="hljs-comment"># Connect to a MongoDB database</span>
+    <span class="hljs-attr">client</span> = pymongo.MongoClient(<span class="hljs-string">"mongodb://localhost:27017/"</span>)
+    <span class="hljs-attr">db</span> = client[<span class="hljs-string">"mydatabase"</span>]
+    
+    <span class="hljs-comment"># Get a collection (equivalent to a table in SQL)</span>
+    <span class="hljs-attr">collection</span> = db[<span class="hljs-string">"customers"</span>]
+    
+    <span class="hljs-comment"># Insert a document</span>
+    <span class="hljs-attr">customer</span> = {<span class="hljs-string">"name"</span>: <span class="hljs-string">"John"</span>, <span class="hljs-string">"email"</span>: <span class="hljs-string">"john@example.com"</span>}
+    <span class="hljs-attr">inserted_id</span> = collection.insert_one(customer).inserted_id
+    
+    <span class="hljs-comment"># Find documents</span>
+    <span class="hljs-attr">result</span> = collection.find_one({<span class="hljs-string">"name"</span>: <span class="hljs-string">"John"</span>})
+    print(result)
+    
+    <span class="hljs-comment"># Close the connection when you're done</span>
+    client.close()
+    </code></pre>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="working-with-apis">Working with APIs</h2>
+        </div>
+        <p>
+          Working with APIs (Application Programming Interfaces) allows you to
+          interact with external services or systems programmatically.
+        </p>
+        <div class="flex">
+          <div>
+            <h3 id="making-http-requests">Making HTTP Requests</h3>
+        <ul>
+          <li>
+            To interact with web APIs, you can use the
+            <code>requests</code> library in Python to make HTTP requests, such as
+            GET, POST, PUT, and DELETE.
+          </li>
+          <li>
+            You can include headers, parameters, and data in your requests as
+            needed.
+          </li>
+        </ul>
+        <p><strong>Making a GET Request:</strong></p>
+        <pre><code><span class="hljs-keyword">import</span> requests
+  
+  <span class="hljs-comment"># Making a GET request to a sample API</span>
+  response = requests.get(<span class="hljs-string">"https://jsonplaceholder.typicode.com/posts/1"</span>)
+  
+  <span class="hljs-comment"># Checking the response status code</span>
+  <span class="hljs-keyword">if</span> response.status_code == <span class="hljs-number">200</span>:
+      <span class="hljs-keyword">print</span>(<span class="hljs-string">"Request successful"</span>)
+      data = response.json()
+      <span class="hljs-keyword">print</span>(data)
+  <span class="hljs-keyword">else</span>:
+      <span class="hljs-keyword">print</span>(<span class="hljs-string">"Request failed with status code:"</span>, response.status_code)
+  </code></pre>
+          </div>
+        <div>
+          <h3 id="parsing-json-responses">Parsing JSON Responses</h3>
+        <ul>
+          <li>
+            When working with web APIs, it&#39;s common to receive responses in
+            JSON (JavaScript Object Notation) format.
+          </li>
+          <li>
+            You can use Python&#39;s <code>json</code> module to parse JSON
+            responses into Python data structures.
+          </li>
+        </ul>
+        <p><strong>Parsing JSON Response:</strong></p>
+        <pre><code><span class="hljs-built_in">import</span> requests
+  <span class="hljs-built_in">import</span> json
+  
+  <span class="hljs-comment"># Making a GET request to a JSON API</span>
+  <span class="hljs-attr">response</span> = requests.get(<span class="hljs-string">"https://jsonplaceholder.typicode.com/posts/1"</span>)
+  
+  <span class="hljs-keyword">if</span> response.<span class="hljs-attr">status_code</span> == <span class="hljs-number">200</span>:
+      <span class="hljs-attr">data</span> = response.json()
+  
+      <span class="hljs-comment"># Accessing JSON data</span>
+      <span class="hljs-attr">title</span> = data[<span class="hljs-string">"title"</span>]
+      <span class="hljs-attr">body</span> = data[<span class="hljs-string">"body"</span>]
+  
+      print(<span class="hljs-string">"Title:"</span>, title)
+      print(<span class="hljs-string">"Body:"</span>, body)
+  <span class="hljs-keyword">else</span>:
+      print(<span class="hljs-string">"Request failed with status code:"</span>, response.status_code)
+  </code></pre>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="virtual-environments">Virtual Environments</h2>
+        </div>
+        <p>
+          Virtual environments allow you to create isolated Python environments
+          where you can install packages and dependencies separately from your
+          system-wide Python installation.
+        </p>
+        <div class="flex">
+          <div>
+            <h3 id="creating-and-managing-virtual-environments">
+              Creating and Managing Virtual Environments
+            </h3>
+            <ul>
+              <li>
+                Python provides the <code>venv</code> module to create and manage
+                virtual environments.
+              </li>
+              <li>
+                You can create a new virtual environment using the
+                <code>venv</code> module and activate it to work within that
+                environment.
+              </li>
+            </ul>
+            <p><strong>Creating a Virtual Environment:</strong></p>
+            <pre><code><span class="hljs-comment"># Create a new virtual environment</span>
+      python -m venv myenv
+      
+      <span class="hljs-comment"># Activate the virtual environment (Windows)</span>
+      myenv\Scripts\<span class="hljs-built_in">activate</span>
+      
+      <span class="hljs-comment"># Activate the virtual environment (Linux/macOS)</span>
+      source myenv/bin/<span class="hljs-built_in">activate</span>
+      </code></pre>
+          </div>
+          <div>
+            <h3 id="dependencies-and-requirements-files">
+              Dependencies and Requirements Files
+            </h3>
+            <ul>
+              <li>
+                Dependencies are Python packages or libraries required for your
+                project to run.
+              </li>
+              <li>
+                You can list project dependencies in a
+                <code>requirements.txt</code> file.
+              </li>
+              <li>
+                Use <code>pip</code> to install dependencies from the
+                <code>requirements.txt</code> file.
+              </li>
+            </ul>
+            <p>
+              <strong>Creating a <code>requirements.txt</code> File:</strong>
+            </p>
+            <pre><code><span class="hljs-comment"># requirements.txt</span>
+      <span class="hljs-attr">requests</span>==<span class="hljs-number">2.26</span>.<span class="hljs-number">0</span>
+      <span class="hljs-attr">flask</span>==<span class="hljs-number">2.1</span>.<span class="hljs-number">1</span>
+      </code></pre>
+            <p>
+              <strong
+                >Installing Dependencies from <code>requirements.txt</code>:</strong
+              >
+            </p>
+            <pre><code><span class="hljs-comment"># Install dependencies from the requirements file</span>
+      pip <span class="hljs-keyword">install</span> -r requirements.txt
+      </code></pre>
+          </div>
+          <div>
+            <h3 id="debugging-and-profiling">Debugging and Profiling</h3>
+          <ul>
+            <li>
+              Debugging is the process of identifying and fixing errors (bugs) in
+              your code.
+            </li>
+            <li>
+              Profiling involves analyzing the performance of your code to identify
+              bottlenecks and optimize it.
+            </li>
+          </ul>
+          </div>
+          <div>
+            <h3 id="debugging-techniques">Debugging Techniques</h3>
+          <ul>
+            <li>
+              Python provides several debugging tools, including the built-in
+              <code>pdb</code> module for debugging and third-party tools like
+              <code>pdb++</code> and integrated development environments (IDEs) with
+              debugging features.
+            </li>
+          </ul>
+          <p>
+            <strong>Using <code>pdb</code> for Debugging:</strong>
+          </p>
+          <pre><code>import pdb
+    
+    def <span class="hljs-built_in">divide</span>(<span class="hljs-keyword">a</span>, b):
+        <span class="hljs-built_in">result</span> = <span class="hljs-keyword">a</span> / b
+        <span class="hljs-literal">return</span> <span class="hljs-built_in">result</span>
+    
+    pdb.set_trace()  <span class="hljs-comment"># Start debugging session</span>
+    num1 = <span class="hljs-number">10</span>
+    num2 = <span class="hljs-number">0</span>
+    <span class="hljs-built_in">result</span> = <span class="hljs-built_in">divide</span>(num1, num2)
+    print(<span class="hljs-string">"Result:"</span>, <span class="hljs-built_in">result</span>)
+    </code></pre>
+          </div>
+          <div>
+            <h3 id="profiling-python-code">Profiling Python Code</h3>
+          <ul>
+            <li>
+              Profiling tools help you measure the execution time of different parts
+              of your code.
+            </li>
+            <li>
+              Python&#39;s <code>cProfile</code> module is a built-in profiler that
+              provides information about function call times and counts.
+            </li>
+          </ul>
+          <p>
+            <strong>Profiling with <code>cProfile</code>:</strong>
+          </p>
+          <pre><code>import cProfile
+    
+    def slow_function():
+        <span class="hljs-keyword">total</span> = 0
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-keyword">range</span>(1, 100000):
+            <span class="hljs-keyword">total</span> += <span class="hljs-built_in">i</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">total</span>
+    
+    <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+        cProfile.<span class="hljs-keyword">run</span>(<span class="hljs-string">"slow_function()"</span>)
+    </code></pre>
+          </div>
+          <div>
+            <h3 id="best-practices">Best Practices</h3>
+          <ul>
+            <li>
+              Adhering to best practices helps you write clean, readable, and
+              maintainable Python code.
+            </li>
+            <li>
+              Following established conventions and guidelines enhances
+              collaboration with other developers.
+            </li>
+          </ul>
+          </div>
+          <div>
+            <h3 id="pep-8-python-enhancement-proposals-">
+              PEP 8 (Python Enhancement Proposals)
+            </h3>
+            <ul>
+              <li>PEP 8 is the official style guide for Python code.</li>
+              <li>
+                It defines conventions for code layout, naming conventions, and more.
+              </li>
+              <li>Adhering to PEP 8 improves code consistency and readability.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 id="code-style-and-conventions">Code Style and Conventions</h3>
+          <ul>
+            <li>
+              Consistent indentation (typically 4 spaces or a tab) should be used
+              throughout your code.
+            </li>
+            <li>
+              Follow naming conventions for variables, functions, and classes. For
+              example, use <code>snake_case</code> for variables and functions and
+              <code>CamelCase</code> for classes.
+            </li>
+            <li>
+              Keep lines of code reasonably short (around 79-80 characters) to
+              improve readability.
+            </li>
+            <li>
+              Use meaningful variable and function names to make your code
+              self-explanatory.
+            </li>
+            <li>Avoid overly complex code and nesting.</li>
+            <li>
+              Use comments and docstrings to provide explanations and documentation
+              for your code.
+            </li>
+          </ul>
+          </div>
+          <h3 id="documentation-and-comments">Documentation and Comments</h3>
+          <ul>
+            <li>
+              Documentation is essential for understanding how code works and how to
+              use it.
+            </li>
+            <li>Comments and docstrings provide explanations and context.</li>
+            <li>
+              Docstrings are used to document modules, classes, and functions.
+            </li>
+          </ul>
+          <p><strong>Docstring:</strong></p>
+          <pre><code><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a, b)</span>:</span>
+        <span class="hljs-string">"""
+        Adds two numbers.
+    
+        Args:
+            a (int): The first number.
+            b (int): The second number.
+    
+        Returns:
+            int: The sum of the two numbers.
+        """</span>
+        <span class="hljs-keyword">return</span> a + b
+    </code></pre>
+          <p><strong>Inline Comment:</strong></p>
+          <pre><code><span class="hljs-comment"># Calculate the average of a list of numbers</span>
+    <span class="hljs-built_in">average</span> = <span class="hljs-built_in">sum</span>(numbers) / <span class="hljs-built_in">len</span>(numbers)
+    </code></pre>
+        </div>
+      </div>
       <h2 id="closures">Closures</h2>
       <ul>
         <li>
@@ -1692,9 +1799,8 @@ print(obj.custom_attribute)  <span class="hljs-comment"># Output: 42</span>
         <strong>Django (Web Framework)</strong> Django is a robust web framework
         for building complex web applications.
       </p>
-      
     </section>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
   </body>
   <script src="./script.js"></script>
 </html>
