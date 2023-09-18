@@ -27,16 +27,13 @@ h6 {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header a {
   color: #000;
-}
-
-.inner-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .dark-mode header a {
@@ -115,15 +112,18 @@ p {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .flex div {
   width: 25%;
+  background: #f8f8f8;
 }
 
-pre {
+pre code {
   margin-top: 10px;
+  width: 100%;
 }
 
 .back {
@@ -140,11 +140,14 @@ pre {
 }
 
 .copy-button {
-  border: none;
   padding: 10px;
-  background: #f3f3f3;
 
+  float: right;
+  position: relative;
+  right: 30px;
   cursor: pointer;
+  width: 40px;
+  text-align: center;
 }
 
 .burger-menu {
