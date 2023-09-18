@@ -6,14 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming CheatSheets</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
   </head>
   <body>
-    <h1 id="programming-cheatsheets-">Programming-CheatSheets 🚀</h1>
-    <h2 id="programming-languages-">Programming Languages:</h2>
-    <ol>
-      <li><a href="/python.html">Python 🐍</a></li>
-      <li>JavaScript 📜</li>
-      <!-- <li>Java ☕</li>
+    <section class="main-container">
+      <header>
+        <div class="container">
+          <div class="logo">Programming Cheatsheets</div>
+        </div>
+        <div class="right-header-icons">
+          <a
+            href="https://github.com/hernandoabella/programming-cheatsheets/"
+            target="_blank"
+            ><div><i class="fa-brands fa-github-alt"></i></div
+          ></a>
+          <div onclick="toggleDarkMode()">
+            <i class="fa-sharp fa-light fa-sunglasses"></i>
+          </div>
+        </div>
+      </header>
+      <h2 id="programming-languages-">Programming Languages:</h2>
+      <ol>
+        <li><a href="/python.html">Python 🐍</a></li>
+        <li>JavaScript 📜</li>
+        <!-- <li>Java ☕</li>
 <li>C++</li>
 <li>C</li>
 <li>C#</li>
@@ -102,125 +133,128 @@
 <li>Wren</li>
 <li>x86-64 Assembly</li>
 <li>Zig</li> -->
-    </ol>
-    <h2 id="databases-and-data-storage-">Databases and Data Storage:</h2>
-    <ol>
-      <li>SQL</li>
-      <li>MySQL</li>
-      <li>PostgreSQL</li>
-      <li>MongoDB</li>
-    </ol>
-    <h2 id="web-development-and-frameworks-">
-      Web Development and Frameworks:
-    </h2>
-    <ol>
-      <li>Node.js (JavaScript runtime)</li>
-      <li>.NET (Development platform)</li>
-      <li>Django (Python framework)</li>
-      <li>Flask (Python framework)</li>
-      <li>Redux (State management in React)</li>
-      <li>GraphQL (Query language)</li>
-      <li>RESTful API (Design and consumption)</li>
-      <li>WebSockets (Real-time communication)</li>
-    </ol>
-    <h2 id="devops-and-continuous-deployment-">
-      DevOps and Continuous Deployment:
-    </h2>
-    <ol>
-      <li>DevOps (Practices and tools)</li>
-      <li>Continuous Integration (CI)</li>
-      <li>Continuous Deployment (CD)</li>
-      <li>
-        Jenkins (CI/CD tool)
-        <a href="https://www.jenkins.io/doc/book/cheat-sheet/"
-          >Jenkins Cheat Sheet</a
-        >
-      </li>
-      <li>
-        Travis CI (CI/CD tool)
-        <a
-          href="https://docs.travis-ci.com/user/common-build-problems/#travis-ci-cant-find-my-cmd"
-          >Travis CI Cheat Sheet</a
-        >
-      </li>
-      <li>
-        CircleCI (CI/CD tool)
-        <a href="https://circleci.com/docs/2.0/reusing-config/"
-          >CircleCI Cheat Sheet</a
-        >
-      </li>
-    </ol>
-    <h2 id="version-control-and-tools-">Version Control and Tools:</h2>
-    <ol>
-      <li>
-        Git (Commands and workflow)
-        <a href="https://education.github.com/git-cheat-sheet-education.pdf"
-          >Git Cheat Sheet</a
-        >
-      </li>
-      <li>Linux (Basic commands)</li>
-      <li>
-        Docker
-        <a
-          href="https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf"
-          >Docker Cheat Sheet</a
-        >
-      </li>
-      <li>
-        Kubernetes (Container orchestration)
-        <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
-          >Kubernetes Cheat Sheet</a
-        >
-      </li>
-      <li>Docker Compose (Service definition)</li>
-    </ol>
-    <h2 id="cloud-computing-">Cloud Computing:</h2>
-    <ol>
-      <li>AWS (Amazon Web Services)</li>
-      <li>Azure (Microsoft Azure)</li>
-    </ol>
-    <h2 id="testing-and-quality-assurance-">Testing and Quality Assurance:</h2>
-    <ol>
-      <li>Testing (Software testing)</li>
-      <li>Unit Testing</li>
-      <li>Integration Testing</li>
-      <li>End-to-End Testing (E2E)</li>
-      <li>
-        Jest (JavaScript testing framework)
-        <a href="https://devhints.io/jest">Jest Cheat Sheet</a>
-      </li>
-      <li>
-        Selenium (Automation testing tool)
-        <a href="https://www.browserstack.com/guide/selenium-cheat-sheet"
-          >Selenium Cheat Sheet</a
-        >
-      </li>
-      <li>JUnit (Java testing framework)</li>
-      <li>PyTest (Python testing framework)</li>
-    </ol>
-    <h2 id="protocols-and-data-formats-">Protocols and Data Formats:</h2>
-    <ol>
-      <li>HTTP/HTTPS (Web communication protocols)</li>
-      <li>JSON (Data format)</li>
-      <li>XML (Data format)</li>
-    </ol>
-    <h2 id="authentication-and-security-">Authentication and Security:</h2>
-    <ol>
-      <li>OAuth (Authentication and authorization)</li>
-    </ol>
-    <h2 id="machine-learning-and-natural-language-processing-">
-      Machine Learning and Natural Language Processing:
-    </h2>
-    <ol>
-      <li>Machine Learning</li>
-      <li>ChatGPT (Natural Language Processing)</li>
-    </ol>
-    <h2 id="javascript-frameworks-">JavaScript Frameworks:</h2>
-    <ol>
-      <li>React</li>
-      <li>Vue.js</li>
-      <li>Angular</li>
-    </ol>
+      </ol>
+      <h2 id="databases-and-data-storage-">Databases and Data Storage:</h2>
+      <ol>
+        <li>SQL</li>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+      </ol>
+      <h2 id="web-development-and-frameworks-">
+        Web Development and Frameworks:
+      </h2>
+      <ol>
+        <li>Node.js (JavaScript runtime)</li>
+        <li>.NET (Development platform)</li>
+        <li>Django (Python framework)</li>
+        <li>Flask (Python framework)</li>
+        <li>Redux (State management in React)</li>
+        <li>GraphQL (Query language)</li>
+        <li>RESTful API (Design and consumption)</li>
+        <li>WebSockets (Real-time communication)</li>
+      </ol>
+      <h2 id="devops-and-continuous-deployment-">
+        DevOps and Continuous Deployment:
+      </h2>
+      <ol>
+        <li>DevOps (Practices and tools)</li>
+        <li>Continuous Integration (CI)</li>
+        <li>Continuous Deployment (CD)</li>
+        <li>
+          Jenkins (CI/CD tool)
+          <a href="https://www.jenkins.io/doc/book/cheat-sheet/"
+            >Jenkins Cheat Sheet</a
+          >
+        </li>
+        <li>
+          Travis CI (CI/CD tool)
+          <a
+            href="https://docs.travis-ci.com/user/common-build-problems/#travis-ci-cant-find-my-cmd"
+            >Travis CI Cheat Sheet</a
+          >
+        </li>
+        <li>
+          CircleCI (CI/CD tool)
+          <a href="https://circleci.com/docs/2.0/reusing-config/"
+            >CircleCI Cheat Sheet</a
+          >
+        </li>
+      </ol>
+      <h2 id="version-control-and-tools-">Version Control and Tools:</h2>
+      <ol>
+        <li>
+          Git (Commands and workflow)
+          <a href="https://education.github.com/git-cheat-sheet-education.pdf"
+            >Git Cheat Sheet</a
+          >
+        </li>
+        <li>Linux (Basic commands)</li>
+        <li>
+          Docker
+          <a
+            href="https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf"
+            >Docker Cheat Sheet</a
+          >
+        </li>
+        <li>
+          Kubernetes (Container orchestration)
+          <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
+            >Kubernetes Cheat Sheet</a
+          >
+        </li>
+        <li>Docker Compose (Service definition)</li>
+      </ol>
+      <h2 id="cloud-computing-">Cloud Computing:</h2>
+      <ol>
+        <li>AWS (Amazon Web Services)</li>
+        <li>Azure (Microsoft Azure)</li>
+      </ol>
+      <h2 id="testing-and-quality-assurance-">
+        Testing and Quality Assurance:
+      </h2>
+      <ol>
+        <li>Testing (Software testing)</li>
+        <li>Unit Testing</li>
+        <li>Integration Testing</li>
+        <li>End-to-End Testing (E2E)</li>
+        <li>
+          Jest (JavaScript testing framework)
+          <a href="https://devhints.io/jest">Jest Cheat Sheet</a>
+        </li>
+        <li>
+          Selenium (Automation testing tool)
+          <a href="https://www.browserstack.com/guide/selenium-cheat-sheet"
+            >Selenium Cheat Sheet</a
+          >
+        </li>
+        <li>JUnit (Java testing framework)</li>
+        <li>PyTest (Python testing framework)</li>
+      </ol>
+      <h2 id="protocols-and-data-formats-">Protocols and Data Formats:</h2>
+      <ol>
+        <li>HTTP/HTTPS (Web communication protocols)</li>
+        <li>JSON (Data format)</li>
+        <li>XML (Data format)</li>
+      </ol>
+      <h2 id="authentication-and-security-">Authentication and Security:</h2>
+      <ol>
+        <li>OAuth (Authentication and authorization)</li>
+      </ol>
+      <h2 id="machine-learning-and-natural-language-processing-">
+        Machine Learning and Natural Language Processing:
+      </h2>
+      <ol>
+        <li>Machine Learning</li>
+        <li>ChatGPT (Natural Language Processing)</li>
+      </ol>
+      <h2 id="javascript-frameworks-">JavaScript Frameworks:</h2>
+      <ol>
+        <li>React</li>
+        <li>Vue.js</li>
+        <li>Angular</li>
+      </ol>
+    </section>
   </body>
   <script src="./script.js"></script>
 </html>
