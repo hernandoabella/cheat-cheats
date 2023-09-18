@@ -1109,67 +1109,75 @@ print(uppercase_words)  <span class="hljs-comment"># Output: ['APPLE', 'BANANA',
   
   print(result)  <span class="hljs-comment"># Output: Hello, world</span>
   </code></pre>
-        <h3 id="working-with-dates-and-times">Working with Dates and Times</h3>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="subtitle">
+          <h2 id="working-with-dates-and-times">Working with Dates and Times</h2>
+        </div>
         <p>
           Working with dates and times is a common task in programming, and Python
           provides the <code>datetime</code> module to handle various date and
           time operations.
         </p>
+
+        <div class="flex">
+          <div>
+            <h3 id="datetime-module">datetime Module</h3>
+          <ul>
+            <li>
+              The <code>datetime</code> module in Python provides classes for
+              working with dates and times.
+            </li>
+            <li>
+              The <code>datetime</code> class is commonly used and includes
+              attributes like year, month, day, hour, minute, second, and
+              microsecond.
+            </li>
+          </ul>
+          <p>
+            <strong>Using the <code>datetime</code> Class:</strong>
+          </p>
+          <pre><code>import datetime
+    
+    # Creating a datetime object <span class="hljs-keyword">for</span> the current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
+    current_datetime = datetime.datetime.<span class="hljs-built_in">now</span>()
+    
+    print(current_datetime)
+    
+    # Output: Current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
+    </code></pre>
+          </div>
+          <div>
+            <h3 id="formatting-dates-and-times">Formatting Dates and Times</h3>
+          <ul>
+            <li>
+              You can format dates and times as strings using the
+              <code>strftime()</code> method of <code>datetime</code> objects.
+            </li>
+            <li>
+              The <code>strftime()</code> method takes a format string that
+              specifies how the date and time should be formatted.
+            </li>
+          </ul>
+          <p><strong>Formatting Dates and Times:</strong></p>
+          <pre><code>import datetime
+    
+    <span class="hljs-comment"># Creating a datetime object</span>
+    date = datetime.datetime(<span class="hljs-number">2023</span>, <span class="hljs-number">9</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">30</span>)
+    
+    <span class="hljs-comment"># Formatting the datetime object as a string</span>
+    formatted_date = date.strftime(<span class="hljs-string">"%Y-%m-%d %H:%M:%S"</span>)
+    
+    <span class="hljs-keyword">print</span>(formatted_date)
+    
+    <span class="hljs-comment"># Output: 2023-09-14 15:30:00</span>
+    </code></pre>
         </div>
-        <div>
-          <h3 id="datetime-module">datetime Module</h3>
-        <ul>
-          <li>
-            The <code>datetime</code> module in Python provides classes for
-            working with dates and times.
-          </li>
-          <li>
-            The <code>datetime</code> class is commonly used and includes
-            attributes like year, month, day, hour, minute, second, and
-            microsecond.
-          </li>
-        </ul>
-        <p>
-          <strong>Using the <code>datetime</code> Class:</strong>
-        </p>
-        <pre><code>import datetime
-  
-  # Creating a datetime object <span class="hljs-keyword">for</span> the current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
-  current_datetime = datetime.datetime.<span class="hljs-built_in">now</span>()
-  
-  print(current_datetime)
-  
-  # Output: Current <span class="hljs-built_in">date</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">time</span>
-  </code></pre>
-        </div>
-        <div>
-          <h3 id="formatting-dates-and-times">Formatting Dates and Times</h3>
-        <ul>
-          <li>
-            You can format dates and times as strings using the
-            <code>strftime()</code> method of <code>datetime</code> objects.
-          </li>
-          <li>
-            The <code>strftime()</code> method takes a format string that
-            specifies how the date and time should be formatted.
-          </li>
-        </ul>
-        <p><strong>Formatting Dates and Times:</strong></p>
-        <pre><code>import datetime
-  
-  <span class="hljs-comment"># Creating a datetime object</span>
-  date = datetime.datetime(<span class="hljs-number">2023</span>, <span class="hljs-number">9</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">30</span>)
-  
-  <span class="hljs-comment"># Formatting the datetime object as a string</span>
-  formatted_date = date.strftime(<span class="hljs-string">"%Y-%m-%d %H:%M:%S"</span>)
-  
-  <span class="hljs-keyword">print</span>(formatted_date)
-  
-  <span class="hljs-comment"># Output: 2023-09-14 15:30:00</span>
-  </code></pre>
         </div>
         </div>
-      </div>
+       
       <div>
         <div class="subtitle">
           <h2 id="concurrency-and-parallelism">Concurrency and Parallelism</h2>
@@ -1635,7 +1643,8 @@ print(uppercase_words)  <span class="hljs-comment"># Output: ['APPLE', 'BANANA',
             </li>
           </ul>
           </div>
-          <h3 id="documentation-and-comments">Documentation and Comments</h3>
+          <div>
+            <h3 id="documentation-and-comments">Documentation and Comments</h3>
           <ul>
             <li>
               Documentation is essential for understanding how code works and how to
@@ -1664,9 +1673,12 @@ print(uppercase_words)  <span class="hljs-comment"># Output: ['APPLE', 'BANANA',
           <pre><code><span class="hljs-comment"># Calculate the average of a list of numbers</span>
     <span class="hljs-built_in">average</span> = <span class="hljs-built_in">sum</span>(numbers) / <span class="hljs-built_in">len</span>(numbers)
     </code></pre>
+          </div>
         </div>
       </div>
-      <h2 id="closures">Closures</h2>
+      <div class="subtitle">
+        <h2 id="closures">Closures</h2>
+      </div>
       <ul>
         <li>
           A closure in Python refers to a function object that has access to
@@ -1698,7 +1710,9 @@ result2 = closure2(<span class="hljs-number">7</span>)  <span class="hljs-commen
 print(result1)  <span class="hljs-comment"># Output: 15</span>
 print(result2)  <span class="hljs-comment"># Output: 27</span>
 </code></pre>
-      <h2 id="metaclasses">Metaclasses</h2>
+      <div class="subtitle">
+        <h2 id="metaclasses">Metaclasses</h2>
+      </div>
       <ul>
         <li>
           In Python, everything is an object, including classes. A metaclass is
@@ -1732,49 +1746,55 @@ obj = MyClass(<span class="hljs-number">10</span>)
 <span class="hljs-comment"># Access the custom attribute added by the metaclass</span>
 print(obj.custom_attribute)  <span class="hljs-comment"># Output: 42</span>
 </code></pre>
-      <h2 id="context-managers">Context Managers</h2>
-      <ul>
-        <li>
-          Context managers are objects that help manage resources, such as file
-          handling or database connections, in a clean and predictable way.
-        </li>
-        <li>
-          They provide a way to set up and tear down resources automatically
-          within a block of code.
-        </li>
-        <li>
-          In Python, context managers are commonly used with the
-          <code>with</code> statement.
-        </li>
-      </ul>
-      <p>
-        <strong>Using <code>with</code> Statement with Files:</strong>
-      </p>
-      <pre><code># Using a <span class="hljs-keyword">context</span> manager <span class="hljs-keyword">to</span> <span class="hljs-keyword">open</span> <span class="hljs-keyword">and</span> automatically close a <span class="hljs-keyword">file</span>
-<span class="hljs-keyword">with</span> <span class="hljs-keyword">open</span>(<span class="hljs-string">"example.txt"</span>, <span class="hljs-string">"w"</span>) as <span class="hljs-keyword">file</span>:
-    <span class="hljs-keyword">file</span>.write(<span class="hljs-string">"Hello, World!"</span>)
-
-# The <span class="hljs-keyword">file</span> <span class="hljs-keyword">is</span> automatically closed <span class="hljs-keyword">when</span> exiting the <span class="hljs-symbol">'with</span>' <span class="hljs-keyword">block</span>
-</code></pre>
-      <p><strong>Custom Context Manager:</strong></p>
-      <pre><code><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyContext</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__enter__</span><span class="hljs-params">(self)</span>:</span>
-        print(<span class="hljs-string">"Entering the context"</span>)
-        <span class="hljs-keyword">return</span> self  <span class="hljs-comment"># Return the context manager object</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__exit__</span><span class="hljs-params">(self, exc_type, exc_value, traceback)</span>:</span>
-        print(<span class="hljs-string">"Exiting the context"</span>)
-
-<span class="hljs-comment"># Using the custom context manager</span>
-<span class="hljs-keyword">with</span> MyContext() <span class="hljs-keyword">as</span> context:
-    print(<span class="hljs-string">"Inside the context"</span>)
-
-<span class="hljs-comment"># Output:</span>
-<span class="hljs-comment"># Entering the context</span>
-<span class="hljs-comment"># Inside the context</span>
-<span class="hljs-comment"># Exiting the context</span>
-</code></pre>
-      <h2 id="useful-python-libraries">Useful Python Libraries</h2>
+      <div>
+        <div class="subtitle">
+          <h2 id="context-managers">Context Managers</h2>
+        </div>
+        <ul>
+          <li>
+            Context managers are objects that help manage resources, such as file
+            handling or database connections, in a clean and predictable way.
+          </li>
+          <li>
+            They provide a way to set up and tear down resources automatically
+            within a block of code.
+          </li>
+          <li>
+            In Python, context managers are commonly used with the
+            <code>with</code> statement.
+          </li>
+        </ul>
+        <p>
+          <strong>Using <code>with</code> Statement with Files:</strong>
+        </p>
+        <pre><code># Using a <span class="hljs-keyword">context</span> manager <span class="hljs-keyword">to</span> <span class="hljs-keyword">open</span> <span class="hljs-keyword">and</span> automatically close a <span class="hljs-keyword">file</span>
+  <span class="hljs-keyword">with</span> <span class="hljs-keyword">open</span>(<span class="hljs-string">"example.txt"</span>, <span class="hljs-string">"w"</span>) as <span class="hljs-keyword">file</span>:
+      <span class="hljs-keyword">file</span>.write(<span class="hljs-string">"Hello, World!"</span>)
+  
+  # The <span class="hljs-keyword">file</span> <span class="hljs-keyword">is</span> automatically closed <span class="hljs-keyword">when</span> exiting the <span class="hljs-symbol">'with</span>' <span class="hljs-keyword">block</span>
+  </code></pre>
+        <p><strong>Custom Context Manager:</strong></p>
+        <pre><code><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyContext</span>:</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__enter__</span><span class="hljs-params">(self)</span>:</span>
+          print(<span class="hljs-string">"Entering the context"</span>)
+          <span class="hljs-keyword">return</span> self  <span class="hljs-comment"># Return the context manager object</span>
+  
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__exit__</span><span class="hljs-params">(self, exc_type, exc_value, traceback)</span>:</span>
+          print(<span class="hljs-string">"Exiting the context"</span>)
+  
+  <span class="hljs-comment"># Using the custom context manager</span>
+  <span class="hljs-keyword">with</span> MyContext() <span class="hljs-keyword">as</span> context:
+      print(<span class="hljs-string">"Inside the context"</span>)
+  
+  <span class="hljs-comment"># Output:</span>
+  <span class="hljs-comment"># Entering the context</span>
+  <span class="hljs-comment"># Inside the context</span>
+  <span class="hljs-comment"># Exiting the context</span>
+  </code></pre>
+      </div>
+      <div class="subtitle">
+        <h2 id="useful-python-libraries">Useful Python Libraries</h2>
+      </div>
       <p>
         <strong>NumPy (Numerical Computing)</strong> NumPy is a library for
         efficient numerical operations in Python.
