@@ -27,13 +27,16 @@ h6 {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header a {
   color: #000;
+}
+
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dark-mode header a {
@@ -64,7 +67,7 @@ i {
   height: 100vh;
   float: left;
   background: #e5e5e5;
-  width: 220px;
+  width: 250px;
   overflow-y: scroll;
 }
 
@@ -123,23 +126,11 @@ pre {
   margin-top: 10px;
 }
 
-.copy-button {
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  position: relative;
-  right: 0;
-  top: 0px;
-  float: right;
-  padding: 10px;
-}
-
 .back {
   padding: 10px;
   background: #f3f3f3;
   color: #000;
   font-size: 1em;
-  width: 184px;
   text-align: center;
 }
 
@@ -148,11 +139,25 @@ pre {
   color: #fff;
 }
 
+.copy-button {
+  border: none;
+  padding: 10px;
+  background: #f3f3f3;
+
+  cursor: pointer;
+}
+
 .burger-menu {
   background: #fcfbfb;
   color: #000;
   border-right: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.burger-menu:hover {
+  background: #171717;
+  color: #fff;
 }
 
 .subtitle {
