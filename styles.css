@@ -103,6 +103,30 @@ i {
   margin-bottom: 10px;
 }
 
+.main-container ol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-container ol li {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.main-container ol li a {
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  color: #000;
+  background: #f3f3f3;
+  border-radius: 25px;
+}
+
 p {
   padding: 10px 0px;
   line-height: 25px;
@@ -118,9 +142,9 @@ p {
   width: 380px;
 }
 
-pre {
+/* pre {
   margin-top: -30px;
-}
+} */
 
 pre code {
   width: 100%;
@@ -196,4 +220,8 @@ pre code {
   background: linear-gradient(90deg, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.python img {
+  width: 20px;
 }
