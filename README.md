@@ -7,3 +7,16 @@
 4. [SQL 📊](./sql-cheatsheet.md)
 5. [GO](./go-cheatsheet.md)
 6. [Clojure](./clojure-cheatsheet.md)
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+## Authors
+
+- [@hernandoabella](https://www.github.com/hernandoabella)
