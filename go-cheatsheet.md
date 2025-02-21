@@ -27,43 +27,43 @@ Basic Syntax:
 		Logical operators
 
 
-Control Structures
-	if Statement:
+5. Control Structures
+	if Statement
 	switch statement
 	for loop
 	range** Loop** (for iterating over arrays, slices, maps, etc.)
 
-Functions
+6. Functions
 	Declaring Functions
 	Multiple Return Values
 	Variadic Functions
 	Anonymous & Higher-Order Functions
 
-Pointers
+7. Pointers
 	Understanding Pointers
 	Pointers vs. Values
 	
-Structs and Interfaces
+8. Structs and Interfaces
 	Defining Structs
 	Methods on Structs
 	Interfaces & Polymorphism
 
-Arrays, Slices and Maps
+10. Arrays, Slices and Maps
 	Arrays
 	Slices & Slice Operations
 	Maps (Key-Value Pairs)
 	
-Concurrency in GO
+11. Concurrency in GO
 	Goroutines
 	Channels
 	select Statement
 	Mutex & WaitGroups
 
-Error Handling
+13. Error Handling
 	The error Type
 	Custom Errors
 
-File Handling
+15. File Handling
 	Reading & Writing Files
 		Writing to a File
 		Reading from a File
@@ -71,23 +71,23 @@ File Handling
 		Encoding (Struct to JSON)
 		Decoding (JSON to Struct)
 		
-HTTP & Web Development
+17. HTTP & Web Development
 	Creating an HTTP Server
 	Handling Requests & Responses
 	Making HTTP Requests
 		GET Request
 		POST Request
 
-Go Modules & Packages
+21. Go Modules & Packages
 	Creating & Using Modules
 	Importing Packages
 		Using Standard Library Packages
 
-Testing in Go
+23. Testing in Go
 	Writing Unit Tests
 	Benchmarking
 
-Popular Go Tools & Commands
+25. Popular Go Tools & Commands
 	Go Toolchain & Environment
 		Installation & Version
 		Setting Up Environment Variables
