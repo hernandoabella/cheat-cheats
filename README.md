@@ -1,22 +1,32 @@
-# C<>ding Cheats 
+# <C0d1ng Ch34ts>
 
-## Languages Supported:
-1. [HTML & CSS](html-and-css-cheatsheet.md)
-2. [Python 🐍](./python-cheatsheet.md)
-3. [JavaScript](./javascript-cheatsheet.md)
-4. [SQL 📊](./sql-cheatsheet.md)
-5. [GO](./go-cheatsheet.md)
-6. [Clojure](./clojure-cheatsheet.md)
+## Basics
+- [Microsoft Excel](./)
 
+## Structure & Styles:
+- [HTML & CSS Cheat Sheet](html-and-css-cheatsheet.md)
 
-## Contributing
+## Libraries:
+- React
 
-Contributions are always welcome!
+## Frameworks
+- Angular
+- Vue
 
-See [`contributing.md`](./contributing.md) for ways to get started.
+## Programming Languages:
+- [Python Cheat Sheet](./python-cheatsheet.md)
+- [JavaScript Cheat Sheet](./javascript-cheatsheet.md)
+- [SQL 📊 Cheat Sheet](./sql-cheatsheet.md)
+- [GO Cheat Sheet](./go-cheatsheet.md)
+- [Clojure Cheat Sheet](./clojure-cheatsheet.md)
+- [Julia Cheat Sheet](./)
 
-Please adhere to this project's `code of conduct`.
+## Data Science:
+- [Pandas Cheat Sheet](./)
 
-## Authors
+## Databases:
+- SQLite
+- MongoDB
+- DuckDB
 
-- [@hernandoabella](https://www.github.com/hernandoabella)
+Made with ❤️ by [@hernandoabella](https://www.github.com/hernandoabella)
