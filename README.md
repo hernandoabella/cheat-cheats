@@ -1,4 +1,4 @@
-# <C0d1ng Ch34ts>
+# Coding Cheats
 
 ## Basics
 - [Microsoft Excel](./)
