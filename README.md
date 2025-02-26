@@ -1,10 +1,10 @@
 # Coding Cheats
 
 ## Basics
-- [Microsoft Excel](./)
+- [Microsoft Excel](./excel-cheatsheet.md)
 
 ## Structure & Styles:
-- [HTML & CSS Cheat Sheet](html-and-css-cheatsheet.md)
+- HTML & CSS Cheat Sheet
 
 ## Libraries:
 - React
@@ -18,8 +18,8 @@
 - [JavaScript Cheat Sheet](./javascript-cheatsheet.md)
 - [SQL 📊 Cheat Sheet](./sql-cheatsheet.md)
 - [GO Cheat Sheet](./go-cheatsheet.md)
-- [Clojure Cheat Sheet](./clojure-cheatsheet.md)
-- [Julia Cheat Sheet](./)
+- Clojure Cheat Sheet
+- Julia Cheat Sheet
 
 ## Data Science:
 - [Pandas Cheat Sheet](./)
