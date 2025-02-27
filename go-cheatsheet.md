@@ -1,3 +1,5 @@
+- Get it on **Amazon:** [https://www.amazon.com/-/es/dp/B0DYF9BNQV](https://www.amazon.com/-/es/dp/B0DYF9BNQV) <br/>
+- Get it on **Gumroad:** []() 
 
 # GO CHEAT SHEET
 Go is a high-level general purpose programming language that is statically typed and compiled. It is known for the simplicity of its syntax and the efficiency of development that it enables by the inclusion of a large standard library supplying many needs for common projects.
