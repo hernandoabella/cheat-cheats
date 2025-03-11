@@ -4,7 +4,7 @@
 - [Microsoft Excel](./excel-cheatsheet.md)
 
 ## AI
-- [The Ultimate AI Cheat Sheet](./ultimate-ai-cheatsheet.md)
+- [The Ultimate AI Cheat Sheet](./the-ultimate-ai-cheatsheet.md)
 
 ## Structure & Styles:
 - [HTML & CSS Cheat Sheet](./)
