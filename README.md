@@ -3,30 +3,33 @@
 ## Basics
 - [Microsoft Excel](./excel-cheatsheet.md)
 
+## AI
+- [The Ultimate AI Cheat Sheet](./ultimate-ai-cheatsheet.md)
+
 ## Structure & Styles:
-- HTML & CSS Cheat Sheet
+- [HTML & CSS Cheat Sheet](./)
 
 ## Libraries:
-- React
+- [React](./)
 
 ## Frameworks
-- Angular
-- Vue
+- [Angular](./)
+- [Vue](./)
 
 ## Programming Languages:
 - [Python Cheat Sheet](./python-cheatsheet.md)
 - [JavaScript Cheat Sheet](./javascript-cheatsheet.md)
-- [SQL 📊 Cheat Sheet](./sql-cheatsheet.md)
+- [SQL Cheat Sheet](./sql-cheatsheet.md)
 - [GO Cheat Sheet](./go-cheatsheet.md)
-- Clojure Cheat Sheet
-- Julia Cheat Sheet
+- [Clojure Cheat Sheet](./)
+- [Julia Cheat Sheet](./)
 
 ## Data Science:
 - [Pandas Cheat Sheet](./)
 
 ## Databases:
-- SQLite
-- MongoDB
-- DuckDB
+- [SQLite](./)
+- [MongoDB](./)
+- [DuckDB](./)
 
 Made with ❤️ by [@hernandoabella](https://www.github.com/hernandoabella)
