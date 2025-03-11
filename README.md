@@ -7,7 +7,9 @@
 - [The Ultimate AI Cheat Sheet](./the-ultimate-ai-cheatsheet.md)
 
 ## Structure & Styles:
-- [HTML & CSS Cheat Sheet](./)
+- [HTML Cheat Sheet](./)
+- [CSS Cheat Sheet](./)
+
 
 ## Libraries:
 - [React](./)
