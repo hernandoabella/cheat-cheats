@@ -1,37 +1,31 @@
-# Coding Cheats
-
-## Basics
-- [Microsoft Excel](./excel-cheatsheet.md)
+![GitHub Banners](https://github.com/user-attachments/assets/c5bb728e-c684-4f62-937a-9a40cd1bb07c)
 
 ## AI
-- [The Ultimate AI Cheat Sheet](./the-ultimate-ai-cheatsheet.md)
+- [The Ultimate AI Cheat Sheet](https://github.com/hernandoabella/the-ultimate-ai-cheatsheet)
 
 ## Structure & Styles:
-- [HTML Cheat Sheet](./)
-- [CSS Cheat Sheet](./)
-
+- [HTML Cheat Sheet](#)
+- [CSS Cheat Sheet](#)
 
 ## Libraries:
-- [React](./)
+- [React](#)
 
 ## Frameworks
-- [Angular](./)
-- [Vue](./)
+- [Angular](#)
+- [Vue](#)
 
 ## Programming Languages:
 - [Python Cheat Sheet](./python-cheatsheet.md)
 - [JavaScript Cheat Sheet](./javascript-cheatsheet.md)
 - [SQL Cheat Sheet](./sql-cheatsheet.md)
 - [GO Cheat Sheet](./go-cheatsheet.md)
-- [Clojure Cheat Sheet](./)
-- [Julia Cheat Sheet](./)
+- [C# Cheat Sheet](#)
 
 ## Data Science:
-- [Pandas Cheat Sheet](./)
+- [Pandas Cheat Sheet](#)
 
 ## Databases:
-- [SQLite](./)
-- [MongoDB](./)
-- [DuckDB](./)
+- [SQLite](#)
+- [MongoDB](#)
 
 Made with ❤️ by [@hernandoabella](https://www.github.com/hernandoabella)
