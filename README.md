@@ -1,4 +1,4 @@
-![GitHub Banners](https://github.com/user-attachments/assets/c5bb728e-c684-4f62-937a-9a40cd1bb07c)
+![GitHub Banners](https://github.com/user-attachments/assets/34fe1ea2-d336-45f3-851a-95ca0ea45171)
 
 ## AI
 - [The Ultimate AI Cheat Sheet](https://github.com/hernandoabella/the-ultimate-ai-cheatsheet)
