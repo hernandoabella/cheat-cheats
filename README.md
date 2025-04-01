@@ -19,10 +19,13 @@
 - [JavaScript Cheat Sheet](./javascript-cheatsheet.md)
 - [SQL Cheat Sheet](./sql-cheatsheet.md)
 - [GO Cheat Sheet](./go-cheatsheet.md)
+- [Rust Cheat Sheet](#)
+- [Java Cheat Sheet](#)
 - [C# Cheat Sheet](#)
 
 ## Data Science:
 - [Pandas Cheat Sheet](#)
+- [Numpy Cheat Sheet](#)
 
 ## Databases:
 - [SQLite](#)
