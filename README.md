@@ -19,7 +19,7 @@
 - [JavaScript Cheat Sheet](./javascript-cheatsheet.md)
 - [SQL Cheat Sheet](./sql-cheatsheet.md)
 - [GO Cheat Sheet](./go-cheatsheet.md)
-- [Rust Cheat Sheet](#)
+- [Rust Cheat Sheet](./rust-cheatsheet.md)
 - [Java Cheat Sheet](#)
 - [C# Cheat Sheet](#)
 
