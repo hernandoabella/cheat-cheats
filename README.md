@@ -21,14 +21,16 @@
 - [GO Cheat Sheet](./go-cheatsheet.md)
 - [Rust Cheat Sheet](./rust-cheatsheet.md)
 - [Java Cheat Sheet](#)
+- [C](#)
+- [C++](#)
 - [C# Cheat Sheet](#)
-
+  
 ## Data Science:
 - [Pandas Cheat Sheet](#)
 - [Numpy Cheat Sheet](#)
 
 ## Databases:
-- [SQLite](#)
+- [PostgreSQL](#)
 - [MongoDB](#)
 
 Made with ❤️ by [@hernandoabella](https://www.github.com/hernandoabella)
