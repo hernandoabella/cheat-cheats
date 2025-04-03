@@ -6,15 +6,17 @@
 ## Structure & Styles:
 - [HTML Cheat Sheet](#)
 - [CSS Cheat Sheet](#)
+- [Bootstrap Cheat Sheet](#)
+- [TailwindCSS Cheat Sheet](#)
 
 ## Libraries:
-- [React](#)
+- [React Cheat Sheet](#)
 
 ## Frameworks
-- [Next.js](#)
-- [Laravel](#)
-- [Angular](#)
-- [Vue](#)
+- [Next.js Cheat Sheet](#)
+- [Laravel Cheat Sheet](#)
+- [Angular Cheat Sheet](#)
+- [Vue Cheat Sheet](#)
 
 ## Programming Languages:
 - [Python Cheat Sheet](./python-cheatsheet.md)
