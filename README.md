@@ -11,6 +11,8 @@
 - [React](#)
 
 ## Frameworks
+- [Next.js](#)
+- [Laravel](#)
 - [Angular](#)
 - [Vue](#)
 
